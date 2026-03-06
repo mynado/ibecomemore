@@ -11,6 +11,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: #f04f39;
+  --color-secondary: #ffc02f;
+  --color-blush: #f3e4e4;
+  --color-dark: #1a1010;
   --font-serif: var(--font-eb-garamond);
 }
 
