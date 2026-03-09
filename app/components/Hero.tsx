@@ -7,7 +7,9 @@ export default function Hero() {
   return (
     <Section>
       <div className="p-4 w-full md:w-1/2 md:border-r-2 border-foreground h-full flex flex-col justify-center">
-        <p className="uppercase text-sm mb-8">Documentary film</p>
+        <p className="uppercase font-mono text-sm text-bark mb-8">
+          Documentary film
+        </p>
         <h1 className="text-6xl font-extrabold text-ember font-serif text-ember mb-2 max-w-sm">
           I Become More With You
         </h1>

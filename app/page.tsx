@@ -21,13 +21,10 @@ export default function Home() {
   const onToggleSynopsis = () => setShowFullSynopsis((prev) => !prev);
   return (
     <div className="flex min-h-screen justify-center">
-      <main className="w-full max-w-[1440px] flex flex-col items-start">
+      <main className="w-full flex flex-col items-start">
         <Hero />
-        <Section>
-          <div
-            id="about"
-            className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground"
-          >
+        <Section id="about">
+          <div className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground">
             <SectionLabel label="The Film" />
             <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
               About the film
@@ -86,13 +83,10 @@ export default function Home() {
             </button>
           </div>
         </Section>
-        <Section>
-          <div
-            id="trailer"
-            className="w-full px-8 py-12 h-full flex flex-col gap-4 justify-start bg-ink"
-          >
+        <Section id="trailer">
+          <div className="w-full px-8 py-12 h-full flex flex-col gap-4 justify-start bg-ink">
             <SectionLabel label="Watch Trailer" color="petal" />
-            <div className="w-full relative h-0 pb-[56.25%]">
+            <div className="w-full mx-auto relative h-0 pb-[56.25%]">
               <iframe
                 src="https://player.vimeo.com/video/1166689842?h=cc03a48e4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allowFullScreen
@@ -105,11 +99,8 @@ export default function Home() {
             </div>
           </div>
         </Section>
-        <Section>
-          <div
-            id="mahoyo"
-            className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground"
-          >
+        <Section id="mahoyo">
+          <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
             <SectionLabel label="Directors" />
             <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
               Meet Mahoyo
@@ -139,8 +130,9 @@ export default function Home() {
               <Image
                 src="/myna-profile.webp"
                 width={800}
-                height={600}
+                height={400}
                 alt="MyNa Do"
+                className="w-full max-h-[400px] object-cover"
               />
               <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
                 MyNa Do
@@ -150,8 +142,9 @@ export default function Home() {
               <Image
                 src="/farah_profile.webp"
                 width={800}
-                height={600}
+                height={400}
                 alt="Farah Yusuf"
+                className="w-full max-h-[400px] object-cover"
               />
               <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
                 Farah Yusuf

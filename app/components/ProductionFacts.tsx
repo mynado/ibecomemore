@@ -34,12 +34,12 @@ export default function ProductionFacts() {
     <Section>
       <div className="w-full p-8">
         <SectionLabel label="Production Facts" />
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
           <ul className="mt-4">
             {productionRoles.map((item) => (
               <li
                 key={item.label}
-                className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-foreground/50 py-4"
+                className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
                 <span className="font-mono uppercase text-xs">
                   {item.label}
@@ -52,7 +52,7 @@ export default function ProductionFacts() {
             {productionFacts.map((item) => (
               <li
                 key={item.label}
-                className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-foreground/50 py-4"
+                className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
                 <span className="font-mono uppercase text-xs">
                   {item.label}

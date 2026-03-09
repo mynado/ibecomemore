@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <div className="bg-ink max-w-[1440px] w-full mx-auto px-8 py-12 md:flex gap-4 text-petal">
+    <div className="bg-ink w-full mx-auto px-8 py-12 md:flex gap-4 text-petal">
       <div className="w-1/3">
         <span className="font-serif font-bold block">
           I Become More With You
