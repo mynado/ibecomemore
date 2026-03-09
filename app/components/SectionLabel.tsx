@@ -7,11 +7,10 @@ export default function SectionLabel({
   label: string;
   color?: string;
 }) {
-  console.log("color", color, "label", label);
   return (
     <div className="flex items-center justify-between gap-4 mb-8">
       <p
-        className={`uppercase text-sm whitespace-nowrap font-mono w-fit text-${color || "bark"}`}
+        className={`uppercase text-xs whitespace-nowrap font-mono w-fit text-${color || "bark"}`}
       >
         {label}
       </p>

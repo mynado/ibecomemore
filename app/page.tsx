@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Image from "next/image";
 import SectionLabel from "./components/SectionLabel";
+import ProductionFacts from "./components/ProductionFacts";
 
 const filmInfo = [
   { label: "Original Title", value: "Jag blir mer med dig" },
@@ -158,6 +159,7 @@ export default function Home() {
             </div>
           </div>
         </Section>
+        <ProductionFacts />
       </main>
     </div>
   );
