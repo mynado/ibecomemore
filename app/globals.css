@@ -1,33 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #f3e4e4;
-  --foreground: #1a1010;
+@theme inline {
+  --color-background: #f3e4e4;
+  --color-foreground: #1a1010;
+  --color-petal: #f3e4e4; /* was blush */
+  --color-bark: #6b3a3a; /* was mid */
+  --color-ember: #f04f39; /* was primary */
+  --color-honey: #ffc02f; /* was secondary */
+  --color-ink: #1a1010; /* was dark */
   --font-body: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: #f04f39;
-  --color-secondary: #ffc02f;
-  --color-blush: #f3e4e4;
-  --color-dark: #1a1010;
   --font-serif: var(--font-eb-garamond);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
-}
+@layer base {
+  :root {
+    --background: #f3e4e4;
+    --foreground: #1a1010;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-eb-garamond), serif;
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-eb-garamond), serif;
+  }
 }

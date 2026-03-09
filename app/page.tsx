@@ -23,9 +23,12 @@ export default function Home() {
       <main className="w-full max-w-[1440px] flex flex-col items-start">
         <Hero />
         <Section>
-          <div className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-secondary border-r-2 border-foreground">
+          <div
+            id="about"
+            className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground"
+          >
             <SectionLabel label="The Film" />
-            <h2 className="text-5xl font-extrabold text-primary mb-2 max-w-sm">
+            <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
               About the film
             </h2>
             <ul className="mt-4">
@@ -75,7 +78,7 @@ export default function Home() {
               </p>
             )}
             <button
-              className="border-b-1 border-primary text-primary w-fit mt-4 uppercase text-sm font-semibold hover:text-red-900 transition-colors duration-200"
+              className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-sm font-semibold hover:text-red-900 transition-colors duration-200"
               onClick={onToggleSynopsis}
             >
               {showFullSynopsis ? "Show less ↑" : " Read full synopsis ↓"}
@@ -83,8 +86,11 @@ export default function Home() {
           </div>
         </Section>
         <Section>
-          <div className="w-full px-8 py-12 h-full flex flex-col gap-4 justify-start bg-dark">
-            <SectionLabel label="Watch Trailer" color="blush" />
+          <div
+            id="trailer"
+            className="w-full px-8 py-12 h-full flex flex-col gap-4 justify-start bg-ink"
+          >
+            <SectionLabel label="Watch Trailer" color="petal" />
             <div className="w-full relative h-0 pb-[56.25%]">
               <iframe
                 src="https://player.vimeo.com/video/1166689842?h=cc03a48e4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -99,9 +105,12 @@ export default function Home() {
           </div>
         </Section>
         <Section>
-          <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
+          <div
+            id="mahoyo"
+            className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground"
+          >
             <SectionLabel label="Directors" />
-            <h2 className="text-5xl font-extrabold text-primary mb-2 max-w-sm">
+            <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
               Meet Mahoyo
             </h2>
             <p>
@@ -132,7 +141,7 @@ export default function Home() {
                 height={600}
                 alt="MyNa Do"
               />
-              <p className="absolute left-4 bottom-4 text-primary font-serif text-2xl font-bold">
+              <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
                 MyNa Do
               </p>
             </div>
@@ -143,7 +152,7 @@ export default function Home() {
                 height={600}
                 alt="Farah Yusuf"
               />
-              <p className="absolute left-4 bottom-4 text-primary font-serif text-2xl font-bold">
+              <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
                 Farah Yusuf
               </p>
             </div>
