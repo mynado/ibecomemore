@@ -100,6 +100,7 @@ export default function Home() {
           </div>
         </Section>
         <Section id="mahoyo">
+          {/* TODO: Update this text */}
           <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
             <SectionLabel label="Directors" />
             <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">

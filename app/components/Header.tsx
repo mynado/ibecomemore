@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="w-full py-4 border-b-2 border-foreground fixed top-0 left-0 right-0 bg-background z-50 font-mono">
       <div className="flex items-center justify-between w-full px-4">
-        <p className="text-md font-bold uppercase">I Become More With You</p>
+        <p className="text-md text-sm uppercase">I Become More With You</p>
         <ul className="flex space-x-4 hidden md:flex">
           {navigation.map((item) => (
             <li key={item.href}>

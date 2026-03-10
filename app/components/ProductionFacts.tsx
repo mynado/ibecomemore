@@ -41,7 +41,7 @@ export default function ProductionFacts() {
                 key={item.label}
                 className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
-                <span className="font-mono uppercase text-xs">
+                <span className="font-mono uppercase text-xs text-bark">
                   {item.label}
                 </span>
                 <span className="font-semibold">{item.value}</span>
@@ -54,7 +54,7 @@ export default function ProductionFacts() {
                 key={item.label}
                 className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
-                <span className="font-mono uppercase text-xs">
+                <span className="font-mono uppercase text-xs text-bark">
                   {item.label}
                 </span>
                 <span className="font-semibold">{item.value}</span>
