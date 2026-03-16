@@ -6,6 +6,7 @@ import Image from "next/image";
 import SectionLabel from "./components/SectionLabel";
 import ProductionFacts from "./components/ProductionFacts";
 import ScreeningInfo from "./components/ScreeningInfo";
+import StudyMaterial from "./components/StudyMaterial";
 
 const filmInfo = [
   { label: "Original Title", value: "Jag blir mer med dig" },
@@ -155,6 +156,7 @@ export default function Home() {
           </div>
         </Section>
         <ScreeningInfo />
+        <StudyMaterial />
         <ProductionFacts />
       </main>
     </div>
