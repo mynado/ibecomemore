@@ -7,6 +7,7 @@ import SectionLabel from "./components/SectionLabel";
 import ProductionFacts from "./components/ProductionFacts";
 import ScreeningInfo from "./components/ScreeningInfo";
 import StudyMaterial from "./components/StudyMaterial";
+import Press from "./components/Press";
 
 const filmInfo = [
   { label: "Original Title", value: "Jag blir mer med dig" },
@@ -157,6 +158,7 @@ export default function Home() {
         </Section>
         <ScreeningInfo />
         <StudyMaterial />
+        <Press />
         <ProductionFacts />
       </main>
     </div>

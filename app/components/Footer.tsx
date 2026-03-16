@@ -8,13 +8,13 @@ export default function Footer() {
           I Become More With You
         </span>
         <span className="font-serif block italic">Jag blir mer med dig</span>
-        <p className="mt-4">
+        <p className="mt-4 text-sm text-petal/60">
           A documentary about art, identity, and resistance in Sweden.
         </p>
       </div>
       <div className="w-1/3">
-        <div>Navigate</div>
-        <ul>
+        <div className="uppercase text-xs text-petal/60 mb-2">Navigate</div>
+        <ul className="text-sm flex flex-col gap-2 text-petal/80">
           <li>About the Film</li>
           <li>Meet Mahoyo</li>
           <li>Request a Screening</li>
@@ -23,10 +23,14 @@ export default function Footer() {
         </ul>
       </div>
       <div className="w-1/3">
-        <div>Contact</div>
-        <div>
-          Contact Mónica Hernández Rejón +46 760 976 164 For screening requests,
-          press inquiries, and study material questions. pramfilm.se ↗
+        <div className="uppercase text-xs text-petal/60 mb-2">Contact</div>
+        <div className="text-sm text-petal/80 flex flex-col gap-2">
+          <span>Mónica Hernández Rejón</span>
+          <span>monica@pramfilm.se</span>
+          <span>
+            For screening requests, press inquiries, and study material
+            questions.
+          </span>
         </div>
       </div>
     </div>
