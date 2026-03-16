@@ -60,39 +60,3 @@ export default function Hero() {
     </Section>
   );
 }
-
-// "use client";
-
-// import Image from "next/image";
-// import Link from "next/link";
-
-// export default function Hero() {
-//   return (
-//     <section className="relative h-screen w-full min-h-[600px] border-b-2 border-foreground overflow-hidden">
-//       <Image
-//         src="/poster_international.jpg"
-//         alt="I Become More With You — film poster"
-//         fill
-//         sizes="100vw"
-//         priority
-//         className="object-contain"
-//       />
-//       <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/10 to-transparent" />
-//       <div className="absolute bottom-14 left-10 right-10 flex items-end justify-between flex-wrap gap-6">
-//         <p className="text-lg font-light text-white max-w-[42ch] leading-relaxed drop-shadow">
-//           Two lifelong friends fight an anti-racist battle in Sweden, building
-//           community through art as a boundless force for change—inside and out.
-//         </p>
-//         <Link
-//           href="#screening"
-//           className="bg-ember text-white font-mono text-xs tracking-widest uppercase px-8 py-4 border-2 border-ember hover:bg-transparent hover:text-ember transition-colors"
-//         >
-//           → Request a Screening
-//         </Link>
-//       </div>
-//       <div className="absolute bottom-8 right-10 bg-sun text-foreground font-mono text-xs tracking-widest uppercase px-3 py-2">
-//         Documentary · 75 min · 2026
-//       </div>
-//     </section>
-//   );
-// }
