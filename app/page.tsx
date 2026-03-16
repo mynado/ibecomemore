@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import Image from "next/image";
 import SectionLabel from "./components/SectionLabel";
 import ProductionFacts from "./components/ProductionFacts";
+import ScreeningInfo from "./components/ScreeningInfo";
 
 const filmInfo = [
   { label: "Original Title", value: "Jag blir mer med dig" },
@@ -26,7 +27,7 @@ export default function Home() {
         <Section id="about">
           <div className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground">
             <SectionLabel label="The Film" />
-            <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
+            <h2 className="text-5xl font-extrabold mb-2 max-w-sm">
               About the film
             </h2>
             <ul className="mt-4">
@@ -76,7 +77,7 @@ export default function Home() {
               </p>
             )}
             <button
-              className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-sm font-semibold hover:text-red-900 transition-colors duration-200"
+              className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-xs font-mono hover:text-red-900 transition-colors duration-200"
               onClick={onToggleSynopsis}
             >
               {showFullSynopsis ? "Show less ↑" : " Read full synopsis ↓"}
@@ -103,27 +104,27 @@ export default function Home() {
           {/* TODO: Update this text */}
           <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
             <SectionLabel label="Directors" />
-            <h2 className="text-5xl font-extrabold text-ember mb-2 max-w-sm">
-              Meet Mahoyo
+            <h2 className="text-5xl font-extrabold mb-2 max-w-sm">
+              Meet <span className="text-ember italic">Mahoyo</span>
             </h2>
             <p>
-              MyNa Do (they/them) is a co-founder of Mahoyo and has worked
-              primarily as a photographer, graphic and costume designer, DJ, and
-              event producer. MyNa got into the film world in 2013 with the SIMA
-              Awards-winning film The Mahoyo Project: South Africa (2015), which
-              they produced and directed with Farah Yusuf and Moira Ganley. In
-              2020 MyNa co-directed Fuck Your Fusion, their first fiction film.
+              MyNa Do (they/them) and Farah Yusuf (she/her) are childhood
+              friends and the artistic duo behind Mahoyo — a creative platform
+              where art and community building are inseparable. Through
+              photography, DJing, styling, costume design, film, and grassroots
+              organising, Mahoyo creates space for voices and stories that
+              Swedish culture too often leaves out.
             </p>
             <p>
-              Farah Yusuf (she/her) forms together with MyNa Do the artist duo
-              and platform Mahoyo. She combines creativity with social issues
-              she is passionate about, by producing projects within several
-              cultural mediums such as photo, styling, and costume designer. In
-              2013 Farah produced and directed her first film The Mahoyo
-              Project: South Africa (2015) together with MyNa Do and Moira
-              Ganley. In 2020 she co-directed Fuck Your Fusion, her first
-              fiction film. In 2023 she directed Holding Light, an artfilm
-              centering blackness and the black experience in Sweden.
+              Together they directed The Mahoyo Project: South Africa (2015),
+              which won a SIMA Award, and co-directed Fuck Your Fusion (2020),
+              their first fiction film. Beyond their shared work, MyNa has
+              co-founded Congee and organised queer and BIPOC spaces through
+              clubs and events, while Farah has continued directing
+              independently, most recently Holding Light (2023), an artfilm
+              centering the Black experience in Sweden. Both continue this work
+              beyond Mahoyo — through independent projects, organising, and
+              filmmaking.
             </p>
           </div>
           <div className="w-full md:w-2/5 h-full flex flex-col justify-start">
@@ -153,6 +154,7 @@ export default function Home() {
             </div>
           </div>
         </Section>
+        <ScreeningInfo />
         <ProductionFacts />
       </main>
     </div>

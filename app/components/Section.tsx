@@ -12,7 +12,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`flex flex-col items-center justify-between md:flex-row w-full border-b-2 border-foreground ${className}`}
+      className={`flex flex-col items-start justify-between md:flex-row w-full border-b-2 border-foreground ${className}`}
     >
       {children}
     </section>

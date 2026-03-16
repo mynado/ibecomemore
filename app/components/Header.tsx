@@ -7,8 +7,8 @@ const navigation = [
   { name: "About", href: "#about" },
   { name: "Trailer", href: "#trailer" },
   { name: "Mahoyo", href: "#mahoyo" },
-  { name: "Screen the film", href: "#contact" },
-  // { name: "Study material", href: "#study" },
+  { name: "Screen the film", href: "#screening" },
+  { name: "Study material", href: "#study" },
   { name: "Press", href: "#press" },
 ];
 
