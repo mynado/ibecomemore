@@ -1,6 +1,7 @@
 "use client";
 
 export default function ContactForm() {
+  // TODO: Implement form submission logic
   return (
     <form className="flex flex-col gap-2">
       <label htmlFor="name" className="text-petal font-mono uppercase text-xs">
