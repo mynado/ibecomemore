@@ -45,6 +45,10 @@ export default function Header() {
   const handleMenuClick = () => setIsMenuOpen(!isMenuOpen);
   const handleLinkClick = () => setIsMenuOpen(false);
 
+  // TODO: Add scroll lock when menu is open to prevent background scrolling on mobile devices.
+  // TODO: Add focus trap for accessibility when menu is open.
+  // TODO: Add language switcher in the header for English/Swedish toggle.
+
   return (
     <header className="w-full py-4 border-b-2 border-foreground fixed top-0 left-0 right-0 bg-background z-50 font-mono">
       <div className="flex items-center justify-between w-full px-4">
