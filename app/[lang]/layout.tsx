@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -28,23 +29,25 @@ export const metadata: Metadata = {
   // },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
   params: { lang: string };
 }>) {
-  const { lang } = await params;
+  const { lang } = params;
   console.log("Current language:", lang);
   return (
     <html lang={lang} className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <NextIntlClientProvider locale={lang}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

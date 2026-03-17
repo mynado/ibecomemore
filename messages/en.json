@@ -1,0 +1,34 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "Hero": {
+    "preTitle": "Documentary film · 2026",
+    "description": "Two lifelong friends fight an anti-racist battle in Sweden, building community through art as a boundless force for change—inside and out.",
+    "requestScreening": "→ Request a Screening",
+    "tag": "Pråmfilm · Sweden"
+  },
+  "About": {
+    "aboutLabel": "The Film",
+    "synopsisLabel": "Synopsis",
+    "title": "About the Film",
+    "synopsis": " Childhood friends MyNa and Farah form the artistic duo Mahoyo. Through their art, they explore questions of identity and belonging within the highly segregated Swedish society. As we follow their journey, we get closer into the growth of far-right movements in Sweden, but also into the uprising of a generation of young Swedes creating political change.",
+    "fullSynopsis": "Childhood friends MyNa and Farah form the artistic duo Mahoyo, acreative platform where they work as DJs, stylists, costume creative platform where they work as DJs, stylists, costume designers, photographers, and filmmakers. MyNa was born in Sweden to a Vietnamese-Chinese family, while Farah was born in Somalia, spent part of her childhood in Kenya, and arrived in Sweden as a child refugee. MyNa is queer, and Farah is Muslim. Growing up together in Oskarshamn—a small town where their identities often made them stand out—their friendship became a refuge, a place of belonging in an environment that could feel isolating. As nearly the only non-white kids in their school, they bonded over their rich and intersecting cultural backgrounds. That connection became the foundation of Mahoyo, through which they explore identity, resistance, and the complexities of belonging in Sweden’s highly segregated society. In this film, we follow MyNa and Farah’s journey as they connect with artists in Vietnam and Kenya, tracing creative lineages that shape their work. Set against the backdrop of Sweden’s growing far-right movements, We witness the rise of a new generation of young Swedes using art and activism to create change.",
+    "showMore": "Show Full Synopsis ↓",
+    "showLess": "Show Less ↑",
+    "titleLabel": "Original Title",
+    "titleValue": "Jag blir mer med dig",
+    "genreLabel": "Genre",
+    "genreValue": "Documentary",
+    "durationLabel": "Duration",
+    "durationValue": "75 minutes",
+    "formatsLabel": "Capture and Final Formats",
+    "formatsValue": "HD/2K",
+    "languageLabel": "Language",
+    "languageValue": "Swedish, English, Vietnamese & Teochew",
+    "subtitlesLabel": "Subtitles",
+    "subtitlesValue": "English, Swedish",
+    "productionLabel": "Production Company",
+    "productionValue": "Pråmfilm AB"
+  }
+}
