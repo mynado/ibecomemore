@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import { useTranslations } from "next-intl";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
