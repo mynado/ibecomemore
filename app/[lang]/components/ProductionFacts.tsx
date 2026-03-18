@@ -1,63 +1,69 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Section from "./Section";
 import SectionLabel from "./SectionLabel";
 
 const productionRoles = [
-  { label: "Directors", value: "MyNa Do & Farah Yusuf" },
-  { label: "Producer", value: "Mónica Hernández Rejón" },
-  { label: "Executive Producer", value: "Kalle Jansson" },
-  { label: "Cinematography", value: "Kalle Jansson, MyNa Do & Farah Yusuf" },
-  { label: "Editing", value: "Matilda Henningsson" },
-  { label: "Original Music", value: "Jacob Solomon" },
-  { label: "Additional Music", value: "Cherrie & Erik Lundin" },
-  { label: "Poetry", value: "Makda Embaie" },
-  { label: "Sound Design", value: "Kristoffer Kronander" },
-  { label: "Grading", value: "Fredrik Jönsson" },
-  { label: "Graphic Design", value: "Johnny Chang" },
+  { label: "directorLabel", value: "directorValue" },
+  { label: "producerLabel", value: "producerValue" },
+  { label: "executiveProducerLabel", value: "executiveProducerValue" },
+  {
+    label: "cinematographyLabel",
+    value: "cinematographyValue",
+  },
+  { label: "editingLabel", value: "editingValue" },
+  { label: "originalMusicLabel", value: "originalMusicValue" },
+  { label: "additionalMusicLabel", value: "additionalMusicValue" },
+  { label: "poetryLabel", value: "poetryValue" },
+  { label: "soundDesignLabel", value: "soundDesignValue" },
+  { label: "gradingLabel", value: "gradingValue" },
+  { label: "graphicDesignLabel", value: "graphicDesignValue" },
 ];
 
 const productionFacts = [
-  { label: "Original Title", value: "Jag blir mer med dig" },
-  { label: "Year", value: "2026" },
-  { label: "Duration", value: "75 min" },
-  { label: "Country", value: "Sweden" },
-  { label: "Language", value: "Swedish, English, Vietnamese & Teochew" },
-  { label: "Subtitles", value: "Swedish, English" },
-  { label: "Production", value: "Pråmfilm AB" },
-  { label: "Co-production", value: "Film i Skåne" },
-  { label: "Format", value: "HD/2K" },
+  { label: "originalTitleLabel", value: "originalTitleValue" },
+  { label: "yearLabel", value: "yearValue" },
+  { label: "genreLabel", value: "genreValue" },
+  { label: "durationLabel", value: "durationValue" },
+  { label: "countryLabel", value: "countryValue" },
+  { label: "languageLabel", value: "languageValue" },
+  { label: "subtitlesLabel", value: "subtitlesValue" },
+  { label: "productionLabel", value: "productionValue" },
+  { label: "coProductionLabel", value: "coProductionValue" },
+  { label: "formatsLabel", value: "formatsValue" },
 ];
 
 export default function ProductionFacts() {
+  const t = useTranslations("ProductionFacts");
   return (
     <Section>
       <div className="w-full p-8">
         <SectionLabel label="Production Facts" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-          <ul className="mt-4">
+        <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-8 max-w-4xl mt-4">
+          <ul>
             {productionRoles.map((item) => (
               <li
                 key={item.label}
                 className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
                 <span className="font-mono uppercase text-xs text-bark">
-                  {item.label}
+                  {t(item.label)}
                 </span>
-                <span className="font-semibold">{item.value}</span>
+                <span className="font-semibold">{t(item.value)}</span>
               </li>
             ))}
           </ul>
-          <ul className="mt-4">
+          <ul>
             {productionFacts.map((item) => (
               <li
                 key={item.label}
                 className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-bark py-4"
               >
                 <span className="font-mono uppercase text-xs text-bark">
-                  {item.label}
+                  {t(item.label)}
                 </span>
-                <span className="font-semibold">{item.value}</span>
+                <span className="font-semibold">{t(item.value)}</span>
               </li>
             ))}
           </ul>

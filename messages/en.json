@@ -1,9 +1,18 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "Header": {
+    "title": "I Become More With You",
+    "navHome": "Home",
+    "navAbout": "About",
+    "navTrailer": "Trailer",
+    "navDirectors": "Mahoyo",
+    "navScreening": "Screen the Film",
+    "navStudy": "Study Material",
+    "navPress": "Press"
   },
   "Hero": {
     "preTitle": "Documentary film · 2026",
+    "title": "I Become More With You",
+    "subtitle": "Jag blir mer med dig",
     "description": "Two lifelong friends fight an anti-racist battle in Sweden, building community through art as a boundless force for change—inside and out.",
     "requestScreening": "→ Request a Screening",
     "tag": "Pråmfilm · Sweden"
@@ -15,13 +24,96 @@
     "synopsis": " Childhood friends MyNa and Farah form the artistic duo Mahoyo. Through their art, they explore questions of identity and belonging within the highly segregated Swedish society. As we follow their journey, we get closer into the growth of far-right movements in Sweden, but also into the uprising of a generation of young Swedes creating political change.",
     "fullSynopsis": "Childhood friends MyNa and Farah form the artistic duo Mahoyo, acreative platform where they work as DJs, stylists, costume creative platform where they work as DJs, stylists, costume designers, photographers, and filmmakers. MyNa was born in Sweden to a Vietnamese-Chinese family, while Farah was born in Somalia, spent part of her childhood in Kenya, and arrived in Sweden as a child refugee. MyNa is queer, and Farah is Muslim. Growing up together in Oskarshamn—a small town where their identities often made them stand out—their friendship became a refuge, a place of belonging in an environment that could feel isolating. As nearly the only non-white kids in their school, they bonded over their rich and intersecting cultural backgrounds. That connection became the foundation of Mahoyo, through which they explore identity, resistance, and the complexities of belonging in Sweden’s highly segregated society. In this film, we follow MyNa and Farah’s journey as they connect with artists in Vietnam and Kenya, tracing creative lineages that shape their work. Set against the backdrop of Sweden’s growing far-right movements, We witness the rise of a new generation of young Swedes using art and activism to create change.",
     "showMore": "Show Full Synopsis ↓",
-    "showLess": "Show Less ↑",
-    "titleLabel": "Original Title",
-    "titleValue": "Jag blir mer med dig",
+    "showLess": "Show Less ↑"
+  },
+  "Trailer": {
+    "label": "Watch Trailer"
+  },
+  "Mahoyo": {
+    "label": "Directors",
+    "title": "Meet",
+    "description": "MyNa Do (they/them) and Farah Yusuf (she/her) are childhood friends and the artistic duo behind Mahoyo — a creative platform where art and community building are inseparable. Through photography, DJing, styling, costume design, film, and grassroots organising, Mahoyo creates space for voices and stories that Swedish culture too often leaves out.\n\nTogether they directed The Mahoyo Project: South Africa (2015), which won a SIMA Award, and co-directed Fuck Your Fusion (2020), their first fiction film. Beyond their shared work, MyNa has co-founded Congee and organised queer and BIPOC spaces through clubs and events, while Farah has continued directing independently, most recently Holding Light (2023), an artfilm centering the Black experience in Sweden. Both continue this work beyond Mahoyo — through independent projects, organising, and filmmaking."
+  },
+  "ScreeningInfo": {
+    "label": "Screen the Film",
+    "title": "Bring the Film to Your Audience",
+    "description": "This film is made to be shared. Whether you´re a teacher, youth worker, community organiser, or cultural institution — we want the film to reach the people who need it most. Screenings can be adapted for many different contexts.",
+    "screeningTypeA": "School & classroom screenings",
+    "screeningTypeB": "Study circles & workshops",
+    "screeningTypeC": "Community & cultural events",
+    "screeningTypeD": "Film festivals & institutions",
+    "contactLabel": "Contact",
+    "contactTitle": "Request a Screening"
+  },
+  "ContactForm": {
+    "nameLabel": "Your Name",
+    "emailLabel": "Email",
+    "selectLabel": "Screening Context",
+    "selectPlaceholder": "Select type...",
+    "selectOptionA": "School/Classroom",
+    "selectOptionB": "Study Circle/Workshop",
+    "selectOptionC": "Community Event",
+    "selectOptionD": "Film Festival/Institution",
+    "selectOptionE": "Other",
+    "messageLabel": "Message",
+    "submitButton": "Send Request"
+  },
+  "StudyMaterial": {
+    "label": "Study Material",
+    "title": "Study Material",
+    "description": "Free downloadable resources for teachers, study circle leaders, and youth workers to use in connection with the film. Suitable for secondary school and adult education contexts.",
+    "materialAType": "Study Guide",
+    "materialATitle": "Teacher's Study Guide",
+    "materialADescription": "A comprehensive guide with background on the film's themes — identity, belonging, racism, and art as resistance.",
+    "materialBType": "Discussion",
+    "materialBTitle": "Discussion Questions",
+    "materialBDescription": "Ready-to-use questions for classroom and study circle conversations, organised by theme and age group.",
+    "materialCType": "Workshop",
+    "materialCTitle": "Art & Activism Workshop",
+    "materialCDescription": "Practical workshop materials exploring how art can be a tool for social change.",
+    "materialDType": "Further Reading",
+    "materialDTitle": "Reading & Resource List",
+    "materialDDescription": "Curated books, articles, podcasts and films that connect to the documentary's themes.",
+    "statusComingSoon": "Coming Soon"
+  },
+  "Press": {
+    "label": "Press & Media",
+    "downloadPressKit": "Download Press Kit",
+    "downloadPhotos": "Download All Photos"
+  },
+  "ProductionFacts": {
+    "directorLabel": "Directors",
+    "directorValue": "MyNa Do & Farah Yusuf",
+    "producerLabel": "Producer",
+    "producerValue": "Mónica Hernández Rejón",
+    "executiveProducerLabel": "Executive Producer",
+    "executiveProducerValue": "Kalle Jansson",
+    "cinematographyLabel": "Cinematography",
+    "cinematographyValue": "Kalle Jansson, MyNa Do & Farah Yusuf",
+    "editingLabel": "Editing",
+    "editingValue": "Matilda Henningsson",
+    "originalMusicLabel": "Original Music",
+    "originalMusicValue": "Jacob Solomon",
+    "additionalMusicLabel": "Additional Music",
+    "additionalMusicValue": "Cherrie & Erik Lundin",
+    "poetryLabel": "Poetry",
+    "poetryValue": "Makda Embaie",
+    "soundDesignLabel": "Sound Design",
+    "soundDesignValue": "Kristoffer Kronander",
+    "gradingLabel": "Grading",
+    "gradingValue": "Fredrik Jönsson",
+    "graphicDesignLabel": "Graphic Design",
+    "graphicDesignValue": "Johnny Chang",
+    "originalTitleLabel": "Original Title",
+    "originalTitleValue": "Jag blir mer med dig",
+    "yearLabel": "Year",
+    "yearValue": "2026",
     "genreLabel": "Genre",
     "genreValue": "Documentary",
     "durationLabel": "Duration",
-    "durationValue": "75 minutes",
+    "durationValue": "75 min",
+    "countryLabel": "Country",
+    "countryValue": "Sweden",
     "formatsLabel": "Capture and Final Formats",
     "formatsValue": "HD/2K",
     "languageLabel": "Language",
@@ -29,6 +121,23 @@
     "subtitlesLabel": "Subtitles",
     "subtitlesValue": "English, Swedish",
     "productionLabel": "Production Company",
-    "productionValue": "Pråmfilm AB"
+    "productionValue": "Pråmfilm AB",
+    "coProductionLabel": "Co-production",
+    "coProductionValue": "Film i Skåne"
+  },
+  "Footer": {
+    "filmTitle": "I Become More With You",
+    "subtitle": "Jag blir mer med dig",
+    "description": "A documentary about art, identity, and resistance in Sweden.",
+    "navLabel": "Navigate",
+    "navAbout": "About the Film",
+    "navDirectors": "Meet Mahoyo",
+    "navScreening": "Screen the Film",
+    "navStudy": "Study Material",
+    "navPress": "Press & Media",
+    "contactLabel": "Contact",
+    "contactPerson": "Mónica Hernández Rejón",
+    "contactEmail": "monica@pramfilm.se",
+    "contactDescription": "For press inquiries, screening requests, and all other questions, please reach out to our producer Mónica Hernández Rejón."
   }
 }

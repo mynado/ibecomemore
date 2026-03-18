@@ -38,7 +38,6 @@ export default async function RootLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  console.log("Current language:", lang);
   return (
     <html lang={lang} className="scroll-smooth">
       <body

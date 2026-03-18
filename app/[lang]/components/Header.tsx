@@ -3,15 +3,16 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Trailer", href: "#trailer" },
-  { name: "Mahoyo", href: "#mahoyo" },
-  { name: "Screen the film", href: "#screening" },
-  { name: "Study material", href: "#study" },
-  { name: "Press", href: "#press" },
+  { name: "navHome", href: "/" },
+  { name: "navAbout", href: "#about" },
+  { name: "navTrailer", href: "#trailer" },
+  { name: "navDirectors", href: "#mahoyo" },
+  { name: "navScreening", href: "#screening" },
+  { name: "navStudy", href: "#study" },
+  { name: "navPress", href: "#press" },
 ];
 
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
@@ -40,6 +41,7 @@ function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
 }
 
 export default function Header() {
+  const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => setIsMenuOpen(!isMenuOpen);
@@ -52,7 +54,7 @@ export default function Header() {
   return (
     <header className="w-full py-4 border-b-2 border-foreground fixed top-0 left-0 right-0 bg-background z-50 font-mono">
       <div className="flex items-center justify-between w-full px-4">
-        <p className="text-sm uppercase">I Become More With You</p>
+        <p className="text-sm uppercase">{t("title")}</p>
 
         <button
           className="md:hidden z-[60] relative"
@@ -70,7 +72,7 @@ export default function Header() {
                 href={item.href}
                 className="text-sm text-foreground hover:text-ember transition-colors duration-200 uppercase"
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           ))}
@@ -103,7 +105,7 @@ export default function Header() {
                 onClick={handleLinkClick}
                 className="text-3xl font-mono text-foreground hover:text-ember transition-colors uppercase"
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           ))}

@@ -1,0 +1,48 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import Section from "./Section";
+import SectionLabel from "./SectionLabel";
+import Image from "next/image";
+
+export default function Mahoyo() {
+  const t = useTranslations("Mahoyo");
+  return (
+    <Section id="mahoyo">
+      {/* TODO: Update this text */}
+      <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
+        <SectionLabel label={t("label")} />
+        <h2 className="text-5xl font-extrabold mb-2 max-w-sm">
+          {t("title")} <span className="text-ember italic">Mahoyo</span>
+        </h2>
+        <div className="space-y-4 whitespace-pre-wrap">{t("description")}</div>
+      </div>
+      <div className="w-full md:w-2/5 h-full flex flex-col justify-start">
+        <div className="relative border-b-2 border-foreground">
+          <Image
+            src="/myna-profile.webp"
+            width={800}
+            height={400}
+            alt="MyNa Do"
+            className="w-full max-h-[400px] object-cover"
+          />
+          <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
+            MyNa Do
+          </p>
+        </div>
+        <div className="relative">
+          <Image
+            src="/farah_profile.webp"
+            width={800}
+            height={400}
+            alt="Farah Yusuf"
+            className="w-full max-h-[400px] object-cover"
+          />
+          <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
+            Farah Yusuf
+          </p>
+        </div>
+      </div>
+    </Section>
+  );
+}

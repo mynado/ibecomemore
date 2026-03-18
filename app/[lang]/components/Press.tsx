@@ -1,22 +1,24 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Section from "./Section";
 import SectionLabel from "./SectionLabel";
 
 export default function Press() {
+  const t = useTranslations("Press");
   return (
     <Section id="press">
       <div className="px-8 py-12 w-full flex flex-col gap-4 justify-start">
-        <SectionLabel label="Press & Photos" />
+        <SectionLabel label={t("label")} />
         <div className="w-full bg-ink h-[600px] text-petal flex items-center justify-center">
           PHOTOS
         </div>
         <div className="flex gap-2">
           <button className="uppercase font-mono border border-foreground text-xs py-2 px-4">
-            ↓ Download Press Kit
+            ↓ {t("downloadPressKit")}
           </button>
           <button className="uppercase font-mono border border-foreground text-xs py-2 px-4">
-            ↓ Download All Photos
+            ↓ {t("downloadPhotos")}
           </button>
         </div>
       </div>

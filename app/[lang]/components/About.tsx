@@ -6,7 +6,7 @@ import SectionLabel from "./SectionLabel";
 import Section from "./Section";
 
 const filmInfo = [
-  { label: "titleLabel", value: "titleValue" },
+  { label: "originalTitleLabel", value: "originalTitleValue" },
   { label: "genreLabel", value: "genreValue" },
   { label: "formatsLabel", value: "formatsValue" },
   { label: "durationLabel", value: "durationValue" },
@@ -17,6 +17,7 @@ const filmInfo = [
 
 export default function About() {
   const t = useTranslations("About");
+  const tFacts = useTranslations("ProductionFacts");
   const [showFullSynopsis, setShowFullSynopsis] = useState(false);
   const onToggleSynopsis = () => setShowFullSynopsis((prev) => !prev);
   return (
@@ -27,11 +28,11 @@ export default function About() {
         <ul className="mt-4">
           {filmInfo.map((item) => (
             <li
-              key={t(item.label)}
+              key={tFacts(item.label)}
               className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-foreground/50 py-4"
             >
-              {t(item.label)}
-              <span className="font-semibold">{t(item.value)}</span>
+              {tFacts(item.label)}
+              <span className="font-semibold">{tFacts(item.value)}</span>
             </li>
           ))}
         </ul>
