@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
 import "./globals.css";
@@ -32,10 +33,10 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
+}: {
+  children: ReactNode;
   params: Promise<{ lang: string }>;
-}>) {
+}) {
   const { lang } = await params;
   console.log("Current language:", lang);
   return (
