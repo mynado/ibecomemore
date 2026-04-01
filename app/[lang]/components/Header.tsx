@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import LocaleToggler from "./LocaleToggler";
 
 const navigation = [
   { name: "navHome", href: "/" },
@@ -76,6 +77,9 @@ export default function Header() {
               </Link>
             </li>
           ))}
+          <li>
+            <LocaleToggler />
+          </li>
         </ul>
       </div>
 
