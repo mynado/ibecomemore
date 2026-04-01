@@ -113,6 +113,10 @@ export default function Header() {
               </Link>
             </li>
           ))}
+          <li>
+            {" "}
+            <LocaleToggler />
+          </li>
         </ul>
       </div>
     </header>
