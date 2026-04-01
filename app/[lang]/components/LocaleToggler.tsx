@@ -21,10 +21,10 @@ export default function LocaleToggler() {
       <button
         onClick={() => handleLocaleChange("sv")}
         className={clsx(
-          "px-2 py-1 text-sm",
+          "px-2 py-1 text-sm cursor-pointer uppercase",
           locale === "sv"
             ? "bg-foreground text-background"
-            : "bg-transparent text-foreground",
+            : "bg-transparent text-foreground hover:text-ember transition-colors duration-200",
         )}
       >
         SV
@@ -32,10 +32,10 @@ export default function LocaleToggler() {
       <button
         onClick={() => handleLocaleChange("en")}
         className={clsx(
-          "px-2 py-1 text-sm",
+          "px-2 py-1 text-sm cursor-pointer uppercase",
           locale === "en"
             ? "bg-foreground text-background"
-            : "bg-transparent text-foreground",
+            : "bg-transparent text-foreground hover:text-ember transition-colors duration-200",
         )}
       >
         EN

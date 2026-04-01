@@ -58,7 +58,7 @@ export default function Header() {
         <p className="text-sm uppercase">{t("title")}</p>
 
         <button
-          className="md:hidden z-[60] relative"
+          className="lg:hidden z-[60] relative"
           onClick={handleMenuClick}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -66,7 +66,7 @@ export default function Header() {
         </button>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex gap-6">
+        <ul className="hidden lg:flex items-center gap-6">
           {navigation.map((item) => (
             <li key={item.href}>
               <Link
@@ -86,7 +86,7 @@ export default function Header() {
       {/* Mobile nav overlay */}
       <div
         className={clsx(
-          "fixed inset-0 bg-background z-50 flex flex-col items-end justify-center px-10 gap-8 transition-all duration-500 md:hidden",
+          "fixed inset-0 bg-background z-50 flex flex-col items-end justify-center px-10 gap-8 transition-all duration-500 lg:hidden",
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none",
