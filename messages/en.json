@@ -27,7 +27,8 @@
     "showLess": "Show Less ↑"
   },
   "Trailer": {
-    "label": "Watch Trailer"
+    "label": "Watch Trailer",
+    "loadTrailer": "Load Trailer"
   },
   "Mahoyo": {
     "label": "Directors",

@@ -27,7 +27,8 @@
     "showLess": "Visa mindre ↑"
   },
   "Trailer": {
-    "label": "Titta på trailer"
+    "label": "Titta på trailer",
+    "loadTrailer": "Ladda trailer"
   },
   "Mahoyo": {
     "label": "Regissörer",

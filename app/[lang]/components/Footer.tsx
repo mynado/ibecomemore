@@ -47,10 +47,11 @@ export default function Footer() {
             <a
               href="https://mahoyo.com"
               target="_blank"
-              className="text-petal/80 hover:underline ml-4"
+              className="text-petal/80 hover:underline"
             >
               mahoyo.com
             </a>
+            •
             <a
               href="https://pramfilm.se"
               target="_blank"
