@@ -44,7 +44,6 @@ export default function Hero() {
         className="w-full md:w-1/2 object-cover"
         preload={true}
         fetchPriority="high"
-        loading="lazy"
       />
     </Section>
   );
