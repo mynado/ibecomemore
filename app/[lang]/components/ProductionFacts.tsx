@@ -39,7 +39,7 @@ export default function ProductionFacts() {
   return (
     <Section>
       <div className="w-full p-8">
-        <SectionLabel label="Production Facts" />
+        <SectionLabel label={t("label")} />
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-8 max-w-4xl mt-4">
           <ul>
             {productionRoles.map((item) => (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -16,11 +17,21 @@ export default function Footer() {
           {t("navLabel")}
         </div>
         <ul className="text-sm flex flex-col gap-2 text-petal/80">
-          <li>{t("navAbout")}</li>
-          <li>{t("navDirectors")}</li>
-          <li>{t("navScreening")}</li>
-          <li>{t("navStudy")}</li>
-          <li>{t("navPress")}</li>
+          <li>
+            <Link href="#about">{t("navAbout")}</Link>
+          </li>
+          <li>
+            <Link href="#directors">{t("navDirectors")}</Link>
+          </li>
+          <li>
+            <Link href="#screening">{t("navScreening")}</Link>
+          </li>
+          <li>
+            <Link href="#study">{t("navStudy")}</Link>
+          </li>
+          <li>
+            <Link href="#press">{t("navPress")}</Link>
+          </li>
         </ul>
       </div>
       <div className="md:w-1/3">
