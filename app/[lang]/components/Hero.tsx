@@ -42,6 +42,8 @@ export default function Hero() {
         width={800}
         height={1200}
         className="w-full md:w-1/2 object-cover"
+        preload={true}
+        loading="lazy"
       />
     </Section>
   );
