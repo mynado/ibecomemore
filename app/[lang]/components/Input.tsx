@@ -34,7 +34,7 @@ export default function Input({
         onBlur={() => setIsDirty(true)}
         aria-invalid={error.isError}
         className={clsx(
-          "border-1 border-petal/60 py-2 px-4 bg-petal/30 text-white text-sm",
+          "border-1 border-petal/60 py-2 px-4 bg-petal/60 text-ink text-sm",
           className,
           showError ? "border-sun" : "border-petal/40",
           showValid ? "border-green-600" : "border-petal/40",

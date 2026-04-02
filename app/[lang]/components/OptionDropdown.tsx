@@ -33,35 +33,38 @@ export default function OptionDropdown({
 
   return (
     <div className="w-full flex flex-col gap-2">
-      <label
-        htmlFor={id}
-        className="text-white font-mono uppercase text-xs font-semibold"
-      >
-        {labelText}
-      </label>
-      <select
-        {...rest}
-        id={id}
-        onBlur={() => setIsDirty(true)}
-        aria-invalid={error.isError}
-        className={clsx(
-          "border-1 border-petal/40 py-2 px-4 bg-petal/30 text-white text-sm invalid:border-sun w-full",
-          showError ? "border-sun" : "border-petal/40",
-          showValid ? "border-green-600" : "border-petal/40",
-          className,
-        )}
-      >
-        {dropdownOptions.map((option) => (
-          <option
-            key={option.value}
-            value={option.value}
-            disabled={option.disabled}
-            hidden={option.hidden}
-          >
-            {option.label}
-          </option>
-        ))}
-      </select>
+      <div className="relative">
+        <label
+          htmlFor={id}
+          className="text-white font-mono uppercase text-xs font-semibold"
+        >
+          {labelText}
+        </label>
+        <select
+          {...rest}
+          id={id}
+          onBlur={() => setIsDirty(true)}
+          aria-invalid={error.isError}
+          className={clsx(
+            "border-1 border-petal/40 py-2 px-4 bg-petal/60 text-ink text-sm invalid:border-sun w-full appearance-none",
+            showError ? "border-sun" : "border-petal/40",
+            showValid ? "border-green-600" : "border-petal/40",
+            className,
+          )}
+        >
+          {dropdownOptions.map((option) => (
+            <option
+              key={option.value}
+              value={option.value}
+              disabled={option.disabled}
+              hidden={option.hidden}
+            >
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <span className="absolute right-2 top-8">▼</span>
+      </div>
       {error.isError && isDirty && (
         <span className="text-sun text-xs">{error.message}</span>
       )}

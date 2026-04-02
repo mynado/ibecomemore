@@ -23,7 +23,7 @@ export default function Mahoyo() {
             alt="MyNa Do"
             className="w-full max-h-[400px] object-cover"
           />
-          <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
+          <p className="absolute left-0 bottom-0 text-ember bg-ink/80 py-1 px-2 font-serif text-2xl font-bold">
             MyNa Do
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Mahoyo() {
             alt="Farah Yusuf"
             className="w-full max-h-[400px] object-cover"
           />
-          <p className="absolute left-4 bottom-4 text-ember font-serif text-2xl font-bold">
+          <p className="absolute left-0 bottom-0 text-ember bg-ink/80 py-1 px-2 font-serif text-2xl font-bold">
             Farah Yusuf
           </p>
         </div>

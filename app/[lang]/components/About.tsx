@@ -46,12 +46,14 @@ export default function About() {
       <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start">
         <SectionLabel label={t("synopsisLabel")} />
         <p className="text-lg">{t("synopsis")}</p>
-        {showFullSynopsis && (
-          <>
-            <p className="text-md mt-4 mb-8">{t("fullSynopsis")}</p>
-            <ProductionFacts />
-          </>
-        )}
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            showFullSynopsis ? "max-h-1000 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <p className="text-md mt-4 mb-8">{t("fullSynopsis")}</p>
+          <ProductionFacts />
+        </div>
         <button
           className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-xs font-mono hover:text-red-900 transition-colors duration-200"
           onClick={onToggleSynopsis}
