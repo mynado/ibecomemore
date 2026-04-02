@@ -13,7 +13,7 @@
     "preTitle": "Dokumentärfilm · 2026",
     "title": "Jag blir mer med dig",
     "subtitle": "I Become More With You",
-    "description": "Två barndomsvänner för en antirasistisk kamp i Sverige och bygger community genom konst som en gränslös kraft för förändring – inifrån och ut.",
+    "description": "Två barndomsvänner vänner för en antirasistisk kamp i Sverige — och använder konsten som en gränslös kraft för förändring, inifrån och ut",
     "requestScreening": "→ Kontakta oss för att visa filmen",
     "tag": "Pråmfilm · Sverige"
   },
@@ -21,8 +21,8 @@
     "aboutLabel": "Om filmen",
     "synopsisLabel": "Synopsis",
     "title": "Om filmen",
-    "synopsis": "Barndomsvännerna MyNa och Farah bildar konstnärsduon Mahoyo. Genom sin konst utforskar de frågor om identitet och tillhörighet i det starkt segregerade svenska samhället. I takt med att vi följer deras resa kommer vi närmre högerextremismens tillväxt i Sverige, men också uppkomsten av en generation unga svenskar som skapar politisk förändring.",
-    "fullSynopsis": "Barndomsvännerna MyNa och Farah bildar konstnärsduon Mahoyo, en kreativ plattform där de arbetar som DJs, stylister, kostymdesigners, fotografer och filmskapare. MyNa är född i Sverige med vietnamesisk-kinesisk bakgrund, medan Farah är född i Somalia, tillbringade delar av sin barndom i Kenya och kom till Sverige som barnflykting. MyNa är queer och Farah är muslim. De växte upp tillsammans i Oskarshamn – en liten stad där deras identiteter ofta fick dem att sticka ut – och vänskapen blev en fristad, en plats för tillhörighet i en miljö som ibland kändes isolerande. Som nästan de enda icke-vita barnen i sin skola byggde de en djup koppling kring sina rika och korsande kulturella bakgrunder. Den kopplingen blev grunden för Mahoyo, genom vilken de utforskar identitet, motstånd och tillhörighetens komplexitet i det starkt segregerade Sverige. I filmen följer vi MyNas och Farahs resa när de knyter kontakt med konstnärer i Vietnam och Kenya och spårar kreativa arv som formar deras arbete. Mot bakgrund av Sveriges växande högerextrema rörelser bevittnar vi uppkomsten av en ny generation unga svenskar som använder konst och aktivism för att skapa förändring.",
+    "synopsis": "Barndomsvännerna MyNa och Farah utgör den konstnärliga duon Mahoyo. Genom sin konst utforskar de frågor om identitet och tillhörighet i det starkt segregerade svenska samhället. När vi följer deras resa kommer vi närmare både framväxten av högerextrema rörelser i Sverige och mobiliseringen av en generation unga svenskar som skapar politisk förändring.",
+    "fullSynopsis": "Barndomsvännerna MyNa och Farah bildar konstnärsduon Mahoyo, en kreativ plattform där de arbetar som DJs, stylister, kostymdesigners, fotografer och filmskapare. MyNa är född i Sverige med vietnamesisk-kinesisk bakgrund, medan Farah är född i Somalia, tillbringade delar av sin barndom i Kenya och kom till Sverige som ensamkommannde flyktingbarn. MyNa är queer och Farah är muslim. De växte upp tillsammans i Oskarshamn – en liten stad där deras identiteter ofta fick dem att sticka ut – och vänskapen blev en fristad, en plats för tillhörighet i en miljö som ibland kändes isolerande. I en skola med få icke-vita elever fann de varandra och byggde en djup koppling kring sina rika kulturella bakgrunder och det intersektionella i sina erfarenheter. Den kopplingen blev grunden för Mahoyo, genom vilken de utforskar identitet, motstånd och tillhörighetens komplexitet i det starkt segregerade Sverige. I filmen följer vi MyNas och Farahs resa när de knyter kontakt med konstnärer i Vietnam och Kenya och följer de kreativa trådar som format deras arbete. Mot bakgrund av Sveriges växande högerextrema rörelser bevittnar vi mobiliseringen av en ny generation unga svenskar som använder konst och aktivism för att skapa förändring.",
     "showMore": "Visa mer ↓",
     "showLess": "Visa mindre ↑"
   },
@@ -32,7 +32,7 @@
   "Mahoyo": {
     "label": "Regissörer",
     "title": "Möt",
-    "description": "MyNa Do (de/dem) och Farah Yusuf (hon/henne) är barndomsvänner och konstnärsduon bakom Mahoyo — en kreativ plattform där konst och communitybyggande är oskiljaktiga. Genom fotografi, DJing, styling, kostymdesign, film och gräsrotsorganisering skapar Mahoyo utrymme för röster och berättelser som det svenska kulturlivet alltför ofta lämnar utanför.\n\nTillsammans regisserade de The Mahoyo Project: South Africa (2015), som vann ett SIMA Award, och Fuck Your Fusion (2020), deras första fiktionsfilm. Utöver sitt gemensamma arbete har MyNa medgrundat Congee och organiserat queer- och BIPOC-spaces genom klubbar och evenemang, medan Farah har fortsatt att regissera självständigt, senast Holding Light (2023), en konstfilm med den svarta upplevelsen i Sverige i centrum. Båda fortsätter detta arbete bortom Mahoyo — genom självständiga projekt, organisering och filmskapande."
+    "description": "MyNa Do (den) och Farah Yusuf (hon/henne) är konstnärsduon bakom Mahoyo — en kreativ och politisk praktik där konst, organisering och communitybyggande är ett och samma.\n\nTillsammans med Moira Ganley producerade och regisserade de The Mahoyo Project: South Africa (2015), som vann ett SIMA Award, följt av spelfilmen Fuck Your Fusion (2020). Jag blir mer med dig är deras första långfilm. Vid sidan av det gemensamma arbetet har MyNa medgrundat Congee och organiserat queer- och BIPOC-centrerade klubbar och evenemang, medan Farah senast regisserade Holding Light (2023), en konstfilm med den svarta upplevelsen i Sverige i centrum. Båda fortsätter detta arbete bortom Mahoyo — genom självständiga projekt, organisering och filmskapande."
   },
   "ScreeningInfo": {
     "label": "Visa filmen",
@@ -140,7 +140,6 @@
     "navPress": "Press & Media",
     "contactLabel": "Kontakt",
     "contactPerson": "Mónica Hernández Rejón",
-    "contactEmail": "monica@pramfilm.se",
-    "contactDescription": "För pressfrågor, visningsförfrågningar och övriga frågor, vänligen kontakta vår producent Mónica Hernández Rejón."
+    "contactDescription": "För pressfrågor, visningsförfrågningar och övriga frågor, vänligen använd formuläret eller kontakta vår producent Mónica Hernández Rejón."
   }
 }

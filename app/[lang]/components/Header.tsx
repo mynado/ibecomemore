@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import LocaleToggler from "./LocaleToggler";
 
 const navigation = [
-  { name: "navHome", href: "/" },
+  { name: "navHome", href: "#home" },
   { name: "navAbout", href: "#about" },
   { name: "navTrailer", href: "#trailer" },
   { name: "navDirectors", href: "#mahoyo" },

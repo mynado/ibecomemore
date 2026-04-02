@@ -1,7 +1,6 @@
 "use client";
 
 import Hero from "./components/Hero";
-import ProductionFacts from "./components/ProductionFacts";
 import ScreeningInfo from "./components/ScreeningInfo";
 // import StudyMaterial from "./components/StudyMaterial";
 // import Press from "./components/Press";
@@ -20,7 +19,6 @@ export default function Home() {
         <ScreeningInfo />
         {/* <StudyMaterial /> */}
         {/* <Press /> */}
-        <ProductionFacts />
       </main>
     </div>
   );

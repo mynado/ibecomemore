@@ -38,10 +38,29 @@ export default function Footer() {
         <div className="uppercase text-xs text-petal/60 mb-2">
           {t("contactLabel")}
         </div>
-        <div className="text-sm text-petal/80 flex flex-col gap-2">
+        <div className="text-sm text-petal/80 flex flex-col gap-2 mb-4">
           <span>{t("contactPerson")}</span>
-          <span>{t("contactEmail")}</span>
+          <span>monica@pramfilm.se</span>
           <span>{t("contactDescription")}</span>
+        </div>
+        <div className="mt-4 text-xs text-petal/60 uppercase">
+          <div className="mb-2">Follow us</div>
+          <div className="flex gap-2">
+            <a
+              href="https://mahoyo.com"
+              target="_blank"
+              className="text-petal/80 hover:underline ml-4"
+            >
+              mahoyo.com
+            </a>
+            <a
+              href="https://pramfilm.se"
+              target="_blank"
+              className="text-petal/80 hover:underline"
+            >
+              pramfilm.se
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import Link from "next/dist/client/link";
 export default function Hero() {
   const t = useTranslations("Hero");
   return (
-    <Section className="mt-14">
+    <Section className="mt-14" id="home">
       <div className="px-4 py-16 w-full md:p-4 md:w-1/2 md:border-r-2 border-foreground h-full flex flex-col justify-center">
         <p className="font-mono text-xs tracking-widest uppercase text-bark mb-4">
           {t("preTitle")}

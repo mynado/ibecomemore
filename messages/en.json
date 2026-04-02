@@ -32,7 +32,7 @@
   "Mahoyo": {
     "label": "Directors",
     "title": "Meet",
-    "description": "MyNa Do (they/them) and Farah Yusuf (she/her) are childhood friends and the artistic duo behind Mahoyo — a creative platform where art and community building are inseparable. Through photography, DJing, styling, costume design, film, and grassroots organising, Mahoyo creates space for voices and stories that Swedish culture too often leaves out.\n\nTogether they directed The Mahoyo Project: South Africa (2015), which won a SIMA Award, and co-directed Fuck Your Fusion (2020), their first fiction film. Beyond their shared work, MyNa has co-founded Congee and organised queer and BIPOC spaces through clubs and events, while Farah has continued directing independently, most recently Holding Light (2023), an artfilm centering the Black experience in Sweden. Both continue this work beyond Mahoyo — through independent projects, organising, and filmmaking."
+    "description": "MyNa Do (they/them) and Farah Yusuf (she/her) are the artistic duo behind Mahoyo — a creative and political practice where art, organising, and community building flow together.\n\nTogether with Moira Ganley, they produced and directed The Mahoyo Project: South Africa (2015), which won a SIMA Award, followed by the fiction film Fuck Your Fusion (2020). I Become More With You is their first feature film. Alongside their shared work, MyNa has co-founded Congee and organised queer and BIPOC-centred clubs and events, while Farah most recently directed Holding Light (2023), an artfilm centering the Black experience in Sweden. Both continue this work beyond Mahoyo — through independent projects, organising, and filmmaking."
   },
   "ScreeningInfo": {
     "label": "Screen the Film",
@@ -84,6 +84,7 @@
     "downloadPhotos": "Download All Photos"
   },
   "ProductionFacts": {
+    "label": "Production Facts",
     "directorLabel": "Directors",
     "directorValue": "MyNa Do & Farah Yusuf",
     "producerLabel": "Producer",
@@ -139,7 +140,6 @@
     "navPress": "Press & Media",
     "contactLabel": "Contact",
     "contactPerson": "Mónica Hernández Rejón",
-    "contactEmail": "monica@pramfilm.se",
-    "contactDescription": "For press inquiries, screening requests, and all other questions, please reach out to our producer Mónica Hernández Rejón."
+    "contactDescription": "For press inquiries, screening requests, and all other questions, please use the form or reach out to our producer Mónica Hernández Rejón."
   }
 }
