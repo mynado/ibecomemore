@@ -4,12 +4,14 @@ import { clsx } from "clsx";
 import { useState } from "react";
 
 type TextAreaProps = {
+  id: string;
   labelText?: string;
   className?: string;
   error: { message: string; isError: boolean };
 } & React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export default function TextArea({
+  id,
   labelText = "",
   className = "",
   error = { message: "", isError: false },
@@ -23,14 +25,12 @@ export default function TextArea({
   const showValid = isDirty && !error.isError && rest.value;
   return (
     <div className="w-full flex flex-col gap-2">
-      <label
-        htmlFor="message"
-        className="text-petal font-mono uppercase text-xs"
-      >
+      <label htmlFor={id} className="text-petal font-mono uppercase text-xs">
         {labelText}
       </label>
       <textarea
         {...rest}
+        id={id}
         onBlur={handleBlur}
         aria-invalid={error.isError}
         className={clsx(

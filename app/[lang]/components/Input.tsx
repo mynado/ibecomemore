@@ -4,12 +4,14 @@ import clsx from "clsx";
 import { useState } from "react";
 
 type InputProps = {
+  id: string;
   labelText?: string;
   className?: string;
   error?: { message: string; isError: boolean };
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
 export default function Input({
+  id,
   labelText,
   className = "",
   error = { message: "", isError: false },
@@ -20,11 +22,12 @@ export default function Input({
   const showValid = isDirty && !error.isError && rest.value;
   return (
     <div className="w-full flex flex-col gap-2">
-      <label htmlFor="name" className="text-petal font-mono uppercase text-xs">
+      <label htmlFor={id} className="text-petal font-mono uppercase text-xs">
         {labelText}
       </label>
       <input
         {...rest}
+        id={id}
         onBlur={() => setIsDirty(true)}
         aria-invalid={error.isError}
         className={clsx(

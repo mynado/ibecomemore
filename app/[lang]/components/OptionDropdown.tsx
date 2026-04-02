@@ -11,6 +11,7 @@ type DropdownOption = {
 };
 
 type DropdownProps = {
+  id: string;
   dropdownOptions?: DropdownOption[];
   labelText?: string;
   className?: string;
@@ -18,6 +19,7 @@ type DropdownProps = {
 } & React.SelectHTMLAttributes<HTMLSelectElement>;
 
 export default function OptionDropdown({
+  id,
   dropdownOptions = [],
   labelText,
   className = "",
@@ -31,14 +33,12 @@ export default function OptionDropdown({
 
   return (
     <div className="w-full flex flex-col gap-2">
-      <label
-        htmlFor="screening-context"
-        className="text-petal font-mono uppercase text-xs"
-      >
+      <label htmlFor={id} className="text-petal font-mono uppercase text-xs">
         {labelText}
       </label>
       <select
         {...rest}
+        id={id}
         onBlur={() => setIsDirty(true)}
         aria-invalid={error.isError}
         className={clsx(
