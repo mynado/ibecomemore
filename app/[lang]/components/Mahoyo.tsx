@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import Section from "./Section";
 import SectionLabel from "./SectionLabel";
@@ -9,7 +7,6 @@ export default function Mahoyo() {
   const t = useTranslations("Mahoyo");
   return (
     <Section id="mahoyo">
-      {/* TODO: Update this text */}
       <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
         <SectionLabel label={t("label")} />
         <h2 className="text-5xl font-extrabold mb-2 max-w-sm">
