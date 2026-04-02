@@ -36,7 +36,9 @@ export default function About() {
               className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-foreground/50 py-4"
             >
               {tFacts(item.label)}
-              <span className="font-semibold">{tFacts(item.value)}</span>
+              <span className="font-semibold text-end">
+                {tFacts(item.value)}
+              </span>
             </li>
           ))}
         </ul>

@@ -33,7 +33,10 @@ export default function OptionDropdown({
 
   return (
     <div className="w-full flex flex-col gap-2">
-      <label htmlFor={id} className="text-petal font-mono uppercase text-xs">
+      <label
+        htmlFor={id}
+        className="text-white font-mono uppercase text-xs font-semibold"
+      >
         {labelText}
       </label>
       <select
@@ -42,7 +45,7 @@ export default function OptionDropdown({
         onBlur={() => setIsDirty(true)}
         aria-invalid={error.isError}
         className={clsx(
-          "border-1 border-petal/40 py-2 px-4 bg-petal/10 text-white text-sm invalid:border-sun w-full",
+          "border-1 border-petal/40 py-2 px-4 bg-petal/30 text-white text-sm invalid:border-sun w-full",
           showError ? "border-sun" : "border-petal/40",
           showValid ? "border-green-600" : "border-petal/40",
           className,

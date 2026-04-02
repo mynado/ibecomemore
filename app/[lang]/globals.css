@@ -5,7 +5,7 @@
   --color-foreground: #1a1010;
   --color-petal: #f3e4e4; /* was blush */
   --color-bark: #6b3a3a; /* was mid */
-  --color-ember: #f04f39; /* was primary */
+  --color-ember: #d83620; /* accessible ember (WCAG 4.5+ on petal) */
   --color-honey: #ffc02f; /* was secondary */
   --color-ink: #1a1010; /* was dark */
   --color-sun: #ffc02f; /* was warning */

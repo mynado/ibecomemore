@@ -35,7 +35,7 @@ export default function ProductionFacts() {
                 <span className="font-mono uppercase text-xs text-bark">
                   {t(item.label)}
                 </span>
-                <span className="font-semibold">{t(item.value)}</span>
+                <span className="font-semibold text-end">{t(item.value)}</span>
               </li>
             ))}
           </ul>

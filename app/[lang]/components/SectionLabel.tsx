@@ -1,6 +1,7 @@
 const colorMap: Record<string, { text: string; bg: string }> = {
   bark: { text: "text-bark", bg: "bg-bark" },
   petal: { text: "text-petal", bg: "bg-petal" },
+  white: { text: "text-white", bg: "bg-white" },
 };
 
 export default function SectionLabel({
