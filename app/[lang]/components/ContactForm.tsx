@@ -36,7 +36,6 @@ export default function ContactForm() {
 
   // TODO: Add more specific validation error messages (e.g. invalid email format)
   // TODO: Consider using a form library like react-hook-form for better scalability and built-in validation handling
-  // TODO: Error handling
 
   const onFieldChange = (
     e: React.ChangeEvent<
@@ -59,9 +58,19 @@ export default function ContactForm() {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const isValid = Object.values(formData).every((field) => !field.isError);
-    console.log("Form validation result:", isValid);
+    const validated = {
+      name: { ...formData.name, isError: !formData.name.value.trim() },
+      email: {
+        ...formData.email,
+        isError: !formData.email.value.includes("@"),
+      },
+      context: { ...formData.context, isError: !formData.context.value },
+      message: { ...formData.message, isError: !formData.message.value.trim() },
+    };
+
+    const isValid = Object.values(validated).every((f) => !f.isError);
     if (!isValid) {
+      setFormData(validated);
       setIsError(true);
       return;
     }
@@ -151,7 +160,7 @@ export default function ContactForm() {
       />
 
       {isError && !isSuccess && (
-        <p role="alert" className="text-red-500 text-sm">
+        <p role="alert" className="text-sun text-sm">
           Please fix validation errors before submitting.
         </p>
       )}

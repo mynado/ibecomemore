@@ -34,9 +34,9 @@ export default function TextArea({
         onBlur={handleBlur}
         aria-invalid={error.isError}
         className={clsx(
-          "border-1 border-petal/40 py-2 px-4 bg-petal/10 text-white text-sm invalid:border-sun min-h-34",
+          "border-1 border-petal/40 py-2 px-4 bg-petal/10 text-white text-sm min-h-34",
           className,
-          showError ? "border-sun" : "",
+          showError ? "border-sun" : "border-petal/40",
           showValid ? "border-green-600" : "border-petal/40",
         )}
         required
