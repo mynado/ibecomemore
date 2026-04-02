@@ -43,6 +43,7 @@ export default function Hero() {
         height={1200}
         className="w-full md:w-1/2 object-cover"
         preload={true}
+        fetchPriority="high"
         loading="lazy"
       />
     </Section>
