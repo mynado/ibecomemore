@@ -56,7 +56,9 @@
     "selectOptionD": "Filmfestival/Institution",
     "selectOptionE": "Annat",
     "messageLabel": "Meddelande",
-    "submitButton": "Skicka förfrågan"
+    "submitButton": "Skicka förfrågan",
+    "submittingButton": "Skickar...",
+    "submittedButton": "Skickat!"
   },
   "StudyMaterial": {
     "label": "Studiematerial",

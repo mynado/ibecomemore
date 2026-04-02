@@ -12,8 +12,8 @@ const navigation = [
   { name: "navTrailer", href: "#trailer" },
   { name: "navDirectors", href: "#mahoyo" },
   { name: "navScreening", href: "#screening" },
-  { name: "navStudy", href: "#study" },
-  { name: "navPress", href: "#press" },
+  // { name: "navStudy", href: "#study" },
+  // { name: "navPress", href: "#press" },
 ];
 
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {

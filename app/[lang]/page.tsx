@@ -3,8 +3,8 @@
 import Hero from "./components/Hero";
 import ProductionFacts from "./components/ProductionFacts";
 import ScreeningInfo from "./components/ScreeningInfo";
-import StudyMaterial from "./components/StudyMaterial";
-import Press from "./components/Press";
+// import StudyMaterial from "./components/StudyMaterial";
+// import Press from "./components/Press";
 import About from "./components/About";
 import Trailer from "./components/Trailer";
 import Mahoyo from "./components/Mahoyo";
@@ -18,8 +18,8 @@ export default function Home() {
         <Trailer />
         <Mahoyo />
         <ScreeningInfo />
-        <StudyMaterial />
-        <Press />
+        {/* <StudyMaterial /> */}
+        {/* <Press /> */}
         <ProductionFacts />
       </main>
     </div>

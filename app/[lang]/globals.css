@@ -8,6 +8,7 @@
   --color-ember: #f04f39; /* was primary */
   --color-honey: #ffc02f; /* was secondary */
   --color-ink: #1a1010; /* was dark */
+  --color-sun: #ffc02f; /* was warning */
   --font-body: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-eb-garamond);

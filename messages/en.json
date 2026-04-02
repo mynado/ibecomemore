@@ -56,7 +56,9 @@
     "selectOptionD": "Film Festival/Institution",
     "selectOptionE": "Other",
     "messageLabel": "Message",
-    "submitButton": "Send Request"
+    "submitButton": "Send Request",
+    "submittingButton": "Sending...",
+    "submittedButton": "Sent!"
   },
   "StudyMaterial": {
     "label": "Study Material",
