@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# I Become More With You
 
-## Getting Started
+A Next.js 16 app for the documentary film **I Become More With You / Jag blir mer med dig**. The project uses the App Router, Tailwind CSS v4, `next-intl` for localization, and a serverless contact form powered by EmailJS.
 
-First, run the development server:
+## Features
+
+- Multilingual site with language route segment: `/en` and `/sv`
+- Localized metadata via `generateMetadata`
+- Self-hosted Google fonts using `next/font/google`
+- Hero image optimized with Next.js `Image`
+- Lazy-loaded Vimeo trailer embed
+- Contact form sending data through `app/api/contact/route.ts`
+- Tailwind CSS styling with global theming
+
+## Project Structure
+
+- `app/[lang]/layout.tsx` — Root layout and locale-aware metadata
+- `app/[lang]/page.tsx` — Localized home page wrapper
+- `app/[lang]/components/` — Reusable UI sections
+- `app/api/contact/route.ts` — Contact form POST handler
+- `messages/en.json` — English translations
+- `messages/sv.json` — Swedish translations
+- `public/` — Static assets, including images and poster art
+
+## Local Development
+
+Install dependencies with pnpm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start the dev server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open the site at:
 
-## Learn More
+- `http://localhost:3000/en`
+- `http://localhost:3000/sv`
 
-To learn more about Next.js, take a look at the following resources:
+## Build and Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build the production app:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm build
+```
 
-## Deploy on Vercel
+Run it locally after building:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Translating Metadata
+
+This app translates metadata using `generateMetadata` in `app/[lang]/layout.tsx`. Metadata is generated on the server, so it cannot use component hooks like `useTranslations`.
+
+Component text, on the other hand, is translated inside React components using `useTranslations("About")`, `useTranslations("Hero")`, etc. Those translations are resolved by `NextIntlClientProvider` at runtime.
+
+Example translation keys for metadata:
+
+```json
+"MetaData": {
+  "title": "...",
+  "description": "..."
+}
+```
+
+## Notes
+
+- Fonts are loaded via `next/font/google` and should be self-hosted by Next.js.
+- The trailer embed is intentionally lazy-loaded to improve page performance.
+- The contact form posts to your backend route and uses `@emailjs/nodejs`.
+
+## Useful Scripts
+
+- `pnpm dev` — start development server
+- `pnpm build` — build production app
+- `pnpm start` — run production server
+- `pnpm lint` — run ESLint
+
+## License
+
+This repository is private, as configured in `package.json`.
