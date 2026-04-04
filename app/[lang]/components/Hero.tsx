@@ -35,13 +35,14 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        src="/poster_international.jpg"
+        src="/poster_international_optimized.jpg"
         alt="I Become More With You - Poster"
         width={800}
         height={1200}
         className="w-full md:w-1/2 object-cover"
         priority
         fetchPriority="high"
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
     </Section>
   );
