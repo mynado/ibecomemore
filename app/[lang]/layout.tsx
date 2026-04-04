@@ -5,6 +5,7 @@ import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { getTranslations } from "next-intl/server";
 
 const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
@@ -24,14 +25,21 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "I Become More With You | A Film by Mahoyo",
-  description:
-    "Official website for the film I Become More With You / Jag blir mer med dig.",
-  // openGraph: {
-  //   images: ["/og-image.jpg"], // En snygg stillbild från filmen
-  // },
-};
+interface MetadataProps {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: MetadataProps): Promise<Metadata> {
+  const locale = (await params).lang;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function RootLayout({
   children,
