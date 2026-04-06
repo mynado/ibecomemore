@@ -6,14 +6,10 @@ import SectionLabel from "./SectionLabel";
 import Section from "./Section";
 
 const filmInfo = [
-  { label: "originalTitleLabel", value: "originalTitleValue" },
+  { label: "directorLabel", value: "directorValue" },
   { label: "yearLabel", value: "yearValue" },
-  { label: "genreLabel", value: "genreValue" },
-  { label: "formatsLabel", value: "formatsValue" },
   { label: "durationLabel", value: "durationValue" },
-  { label: "countryLabel", value: "countryValue" },
   { label: "languageLabel", value: "languageValue" },
-  { label: "subtitlesLabel", value: "subtitlesValue" },
   { label: "productionLabel", value: "productionValue" },
   { label: "coProductionLabel", value: "coProductionValue" },
 ];
@@ -43,7 +39,7 @@ export default function About() {
               key={tFacts(item.label)}
               className="text-lg text-foreground text-sm flex items-center justify-between gap-2 border-t-1 border-foreground/50 py-4"
             >
-              {tFacts(item.label)}
+              <span className="uppercase text-xs">{tFacts(item.label)}</span>
               <span className="font-semibold text-end">
                 {tFacts(item.value)}
               </span>
