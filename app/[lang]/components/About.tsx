@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import SectionLabel from "./SectionLabel";
 import Section from "./Section";
-import ProductionFacts from "./ProductionFacts";
 
 const filmInfo = [
   { label: "originalTitleLabel", value: "originalTitleValue" },
@@ -64,7 +63,6 @@ export default function About() {
           }`}
         >
           <p className="text-md mt-4 mb-8">{t("fullSynopsis")}</p>
-          <ProductionFacts />
         </div>
         <button
           className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-xs font-mono hover:text-red-900 transition-colors duration-200"

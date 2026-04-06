@@ -7,6 +7,7 @@ import ScreeningInfo from "./components/ScreeningInfo";
 import About from "./components/About";
 import Trailer from "./components/Trailer";
 import Mahoyo from "./components/Mahoyo";
+import ProductionFacts from "./components/ProductionFacts";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <ScreeningInfo />
         {/* <StudyMaterial /> */}
         {/* <Press /> */}
+        <ProductionFacts />
       </main>
     </div>
   );

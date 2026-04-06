@@ -27,7 +27,7 @@
     "title": "Om filmen",
     "synopsis": "Barndomsvännerna MyNa och Farah utgör den konstnärliga duon Mahoyo. Genom sin konst utforskar de frågor om identitet och tillhörighet i det starkt segregerade svenska samhället. När vi följer deras resa kommer vi närmare både framväxten av högerextrema rörelser i Sverige och mobiliseringen av en generation unga svenskar som skapar politisk förändring.",
     "fullSynopsis": "Barndomsvännerna MyNa och Farah bildar konstnärsduon Mahoyo, en kreativ plattform där de arbetar som DJs, stylister, kostymdesigners, fotografer och filmskapare. MyNa är född i Sverige med vietnamesisk-kinesisk bakgrund, medan Farah är född i Somalia, tillbringade delar av sin barndom i Kenya och kom till Sverige som ensamkommannde flyktingbarn. MyNa är queer och Farah är muslim. De växte upp tillsammans i Oskarshamn – en liten stad där deras identiteter ofta fick dem att sticka ut – och vänskapen blev en fristad, en plats för tillhörighet i en miljö som ibland kändes isolerande. I en skola med få icke-vita elever fann de varandra och byggde en djup koppling kring sina rika kulturella bakgrunder och det intersektionella i sina erfarenheter. Den kopplingen blev grunden för Mahoyo, genom vilken de utforskar identitet, motstånd och tillhörighetens komplexitet i det starkt segregerade Sverige. I filmen följer vi MyNas och Farahs resa när de knyter kontakt med konstnärer i Vietnam och Kenya och följer de kreativa trådar som format deras arbete. Mot bakgrund av Sveriges växande högerextrema rörelser bevittnar vi mobiliseringen av en ny generation unga svenskar som använder konst och aktivism för att skapa förändring.",
-    "showMore": "Visa mer ↓",
+    "showMore": "Visa hela synopsis ↓",
     "showLess": "Visa mindre ↑"
   },
   "Trailer": {
@@ -47,7 +47,7 @@
     "screeningTypeB": "Studiecirklar & workshops",
     "screeningTypeC": "Community & kulturevents",
     "screeningTypeD": "Filmfestivaler & institutioner",
-    "contactLabel": "Kontakt",
+    "contactLabel": "Kontakt oss",
     "contactTitle": "Kontakta oss för en visning"
   },
   "ContactForm": {
