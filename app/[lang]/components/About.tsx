@@ -2,8 +2,8 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import SectionLabel from "./SectionLabel";
-import Section from "./Section";
+import SectionLabel from "./ui/SectionLabel";
+import Section from "./ui/Section";
 
 const filmInfo = [
   { label: "directorLabel", value: "directorValue" },

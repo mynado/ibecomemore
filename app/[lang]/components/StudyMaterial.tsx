@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Section from "./Section";
-import SectionLabel from "./SectionLabel";
+import Section from "./ui/Section";
+import SectionLabel from "./ui/SectionLabel";
 
 const studyMaterials = [
   {

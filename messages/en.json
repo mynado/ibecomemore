@@ -39,7 +39,7 @@
     "title": "Meet",
     "description": "MyNa Do (they/them) and Farah Yusuf (she/her) are the artistic duo behind Mahoyo — a creative and political practice where art, organising, and community building flow together.\n\nTogether with Moira Ganley, they produced and directed The Mahoyo Project: South Africa (2015), which won a SIMA Award, followed by the fiction film Fuck Your Fusion (2020). I Become More With You is their first feature film. Alongside their shared work, MyNa has co-founded Congee and organised queer and BIPOC-centred clubs and events, while Farah most recently directed Holding Light (2023), an artfilm centering the Black experience in Sweden. Both continue this work beyond Mahoyo — through independent projects, organising, and filmmaking."
   },
-  "ScreeningInfo": {
+  "GetInTouch": {
     "label": "Screen the Film",
     "title": "Bring the Film to Your Audience",
     "description": "This film is made to be shared. Whether you´re a teacher, youth worker, community organiser, or cultural institution — we want the film to reach the people who need it most. Screenings can be adapted for many different contexts.",
@@ -87,6 +87,13 @@
     "label": "Press & Media",
     "downloadPressKit": "Download Press Kit",
     "downloadPhotos": "Download All Photos"
+  },
+  "ScreeningInfo": {
+    "label": "Screenings",
+    "upcomingTitle": "Upcoming",
+    "pastTitle": "Past",
+    "noUpcoming": "No upcoming screenings at the moment. Check back soon!",
+    "moreInfoUrl": "More Info"
   },
   "ProductionFacts": {
     "label": "Production Facts",

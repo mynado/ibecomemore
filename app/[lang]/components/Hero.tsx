@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Section from "./Section";
+import Section from "./ui/Section";
 import Link from "next/dist/client/link";
 
 export default function Hero() {

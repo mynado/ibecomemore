@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-import Section from "./Section";
-import SectionLabel from "./SectionLabel";
+import Section from "./ui/Section";
+import SectionLabel from "./ui/SectionLabel";
 
 export default function Trailer() {
   const t = useTranslations("Trailer");
