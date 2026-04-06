@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import SectionLabel from "./SectionLabel";
 import Section from "./Section";
@@ -23,7 +23,16 @@ export default function About() {
   const t = useTranslations("About");
   const tFacts = useTranslations("ProductionFacts");
   const [showFullSynopsis, setShowFullSynopsis] = useState(false);
-  const onToggleSynopsis = () => setShowFullSynopsis((prev) => !prev);
+  const synopsisRef = useRef<HTMLDivElement | null>(null);
+  const onToggleSynopsis = () => {
+    setShowFullSynopsis((prev) => !prev);
+    if (showFullSynopsis) {
+      synopsisRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <Section id="about">
       <div className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground">
@@ -43,7 +52,10 @@ export default function About() {
           ))}
         </ul>
       </div>
-      <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start">
+      <div
+        ref={synopsisRef}
+        className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start"
+      >
         <SectionLabel label={t("synopsisLabel")} />
         <p className="text-lg">{t("synopsis")}</p>
         <div
