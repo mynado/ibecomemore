@@ -42,7 +42,7 @@ export default function Footer() {
           <span>{t("contactDescription")}</span>
         </div>
         <div className="mt-4 text-xs text-petal/60 uppercase">
-          <div className="mb-2">Follow us</div>
+          <div className="mb-2">{t("followUs")}</div>
           <div className="flex gap-2">
             <a
               href="https://mahoyo.com"
