@@ -15,6 +15,7 @@ const productionRoles = [
   { label: "additionalMusicLabel", value: "additionalMusicValue" },
   { label: "poetryLabel", value: "poetryValue" },
   { label: "soundDesignLabel", value: "soundDesignValue" },
+  { label: "dramaturgyLabel", value: "dramaturgyValue" },
   { label: "gradingLabel", value: "gradingValue" },
   { label: "graphicDesignLabel", value: "graphicDesignValue" },
 ];

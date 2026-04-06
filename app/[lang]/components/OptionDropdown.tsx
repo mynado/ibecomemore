@@ -1,5 +1,6 @@
 "use client";
 
+import DownArrow from "@/app/icons/DownArrow";
 import clsx from "clsx";
 import { useState } from "react";
 
@@ -63,7 +64,9 @@ export default function OptionDropdown({
             </option>
           ))}
         </select>
-        <span className="absolute right-2 top-8">▼</span>
+        <span className="absolute right-2 top-8 pointer-events-none">
+          <DownArrow />
+        </span>
       </div>
       {error.isError && isDirty && (
         <span className="text-sun text-xs">{error.message}</span>
