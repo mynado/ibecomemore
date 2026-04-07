@@ -19,17 +19,11 @@ export default function Footer() {
             <Link href="#about">{t("navAbout")}</Link>
           </li>
           <li>
-            <Link href="#directors">{t("navDirectors")}</Link>
-          </li>
-          <li>
             <Link href="#screening">{t("navScreening")}</Link>
           </li>
-          <li>
-            <Link href="#study">{t("navStudy")}</Link>
-          </li>
-          <li>
+          {/* <li>
             <Link href="#press">{t("navPress")}</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="md:w-1/3">

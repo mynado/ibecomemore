@@ -10,16 +10,19 @@ export default function Press() {
     <Section id="press">
       <div className="px-8 py-12 w-full flex flex-col gap-4 justify-start">
         <SectionLabel label={t("label")} />
-        <div className="w-full bg-ink h-[600px] text-petal flex items-center justify-center">
+        {/* TODO: Select photos */}
+        {/* <div className="w-full bg-ink h-[600px] text-petal flex items-center justify-center">
           PHOTOS
-        </div>
+        </div> */}
         <div className="flex gap-2">
-          <button className="uppercase font-mono border border-foreground text-xs py-2 px-4">
-            ↓ {t("downloadPressKit")}
-          </button>
-          <button className="uppercase font-mono border border-foreground text-xs py-2 px-4">
-            ↓ {t("downloadPhotos")}
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1b2NOBNR2yQkfCAG6h0fYK1jLH2zAeF6k/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase font-mono border border-foreground text-xs py-2 px-4"
+          >
+            → {t("viewPressKit")}
+          </a>
         </div>
       </div>
     </Section>

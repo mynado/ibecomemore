@@ -39,7 +39,7 @@ export default function Trailer() {
   const loadIframe = () => setIsIframeVisible(true);
 
   return (
-    <Section id="trailer">
+    <Section>
       <div className="w-full px-8 py-12 h-full flex flex-col gap-4 justify-start bg-ink">
         <SectionLabel label={t("label")} color="petal" />
         <div
