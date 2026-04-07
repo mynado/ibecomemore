@@ -25,16 +25,6 @@ export default function Footer() {
             <Link href="#press">{t("navPress")}</Link>
           </li> */}
         </ul>
-      </div>
-      <div className="md:w-1/3">
-        <div className="uppercase text-xs text-petal/60 mb-2">
-          {t("contactLabel")}
-        </div>
-        <div className="text-sm text-petal/80 flex flex-col gap-2 mb-4">
-          <span>{t("contactPerson")}</span>
-          <span>monica@pramfilm.se</span>
-          <span>{t("contactDescription")}</span>
-        </div>
         <div className="mt-4 text-xs text-petal/60 uppercase">
           <div className="mb-2">{t("followUs")}</div>
           <div className="flex gap-2">
@@ -54,6 +44,16 @@ export default function Footer() {
               pramfilm.se
             </a>
           </div>
+        </div>
+      </div>
+      <div className="md:w-1/3">
+        <div className="uppercase text-xs text-petal/60 mb-2">
+          {t("contactLabel")}
+        </div>
+        <div className="text-sm text-petal/80 flex flex-col gap-2 mb-4">
+          <span>{t("contactPerson")}</span>
+          <span>monica@pramfilm.se</span>
+          <span>{t("contactDescription")}</span>
         </div>
       </div>
     </div>
