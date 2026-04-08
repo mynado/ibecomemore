@@ -1,11 +1,18 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Section from "./ui/Section";
 import Link from "next/dist/client/link";
 import Heading from "./ui/Heading";
 
+const posters: Record<string, string> = {
+  en: "/poster_international_optimized.jpg",
+  sv: "/poster_swedish.jpg",
+};
+
 export default function Hero() {
   const t = useTranslations("Hero");
+  const locale = useLocale();
+  const posterSrc = posters[locale] || posters.en;
   return (
     <Section className="mt-14" id="home">
       <div className="px-4 py-16 w-full md:p-4 md:w-1/2 md:border-r-2 border-foreground h-full flex flex-col justify-center">
@@ -36,8 +43,8 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        src="/poster_international_optimized.jpg"
-        alt="I Become More With You - Poster"
+        src={posterSrc}
+        alt={t("posterAlt")}
         width={800}
         height={1200}
         className="w-full md:w-1/2 object-cover"
