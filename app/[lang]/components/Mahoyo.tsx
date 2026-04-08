@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
 import Image from "next/image";
+import Heading from "./ui/Heading";
 
 export default function Mahoyo() {
   const t = useTranslations("Mahoyo");
@@ -9,9 +10,9 @@ export default function Mahoyo() {
     <Section>
       <div className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start border-r-2 border-foreground">
         <SectionLabel label={t("label")} />
-        <h2 className="text-5xl font-extrabold mb-2 max-w-sm">
+        <Heading>
           {t("title")} <span className="text-ember italic">Mahoyo</span>
-        </h2>
+        </Heading>
         <div className="space-y-4 whitespace-pre-wrap">{t("description")}</div>
       </div>
       <div className="w-full md:w-2/5 h-full flex flex-col justify-start">

@@ -7,9 +7,8 @@
     "title": "Jag blir mer med dig",
     "navHome": "Hem",
     "navAbout": "Om filmen",
-    "navTrailer": "Trailer",
-    "navDirectors": "Mahoyo",
-    "navScreening": "Visa filmen",
+    "navScreenings": "Visningar",
+    "navContact": "Kontakt",
     "navStudy": "Studiematerial",
     "navPress": "Press"
   },
@@ -85,11 +84,21 @@
   },
   "Press": {
     "label": "Press & Media",
-    "viewPressKit": "Visa presskit",
-    "downloadPhotos": "Ladda ner alla foton"
+    "title": "Material",
+    "description": "Pressmaterial för Jag blir mer med dig — inklusive högupplösta foton, filmstills och presskit — finns nedan. För intervjuer och övriga pressfrågor, kontakta vår producent direkt.",
+    "contactLabel": "Presskontakt",
+    "pressKitLabel": "Presskit",
+    "openPressKit": "Öppna presskit",
+    "pressPhotoLabel": "Pressfoton",
+    "pressPhotoDescription": "Högupplösta foton från produktionen, tillgängliga för pressbruk i tryckta och digitala publikationer.",
+    "pressPhotoLink": "Öppna pressfoton",
+    "filmStillsLabel": "Filmstills",
+    "filmStillsDescription": "Stillbilder från filmen, lämpliga för redaktionellt och programmatiskt bruk.",
+    "filmStillsLink": "Öppna filmstills"
   },
   "ScreeningInfo": {
     "label": "Visningar",
+    "title": "Kommande och tidigare visningar",
     "upcomingTitle": "Kommande",
     "pastTitle": "Tidigare",
     "noUpcoming": "Inga kommande visningar just nu. Kontrollera igen senare!",

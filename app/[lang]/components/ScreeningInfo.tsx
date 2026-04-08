@@ -1,13 +1,17 @@
 import { useTranslations } from "next-intl";
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
+import Heading from "./ui/Heading";
 
 type Screening = {
   title: string;
   date: string;
   formattedDate: string;
   location: string;
-  url?: string;
+  link?: {
+    url: string;
+    title: string;
+  };
 };
 
 export default function ScreeningInfo() {
@@ -25,7 +29,10 @@ export default function ScreeningInfo() {
       date: "2026-02-20T00:00:00Z",
       formattedDate: formatScreeningDate("2026-02-20T00:00:00Z"),
       location: "Filmcentrum Riks, Stockholm",
-      url: "https://mmff.se/film/i-become-more-with-you/",
+      link: {
+        url: "https://mmff.se/film/i-become-more-with-you/",
+        title: "Festival page ↗",
+      },
     },
     {
       title: "Vi blir mer tillsammans – FN-dagen mot islamofobi",
@@ -50,7 +57,20 @@ export default function ScreeningInfo() {
       date: "2026-04-25T00:00:00Z",
       formattedDate: formatScreeningDate("2026-04-25T00:00:00Z"),
       location: "Panora, Malmö",
-      url: "https://www.femalefilmfestival.se/i-become-more-with-you/",
+      link: {
+        url: "https://www.femalefilmfestival.se/i-become-more-with-you/",
+        title: "Festival page ↗",
+      },
+    },
+    {
+      title: "IFEMA+",
+      date: "2026-04-26T17:59:00Z",
+      formattedDate: formatScreeningDate("2026-04-26T17:59:00Z"),
+      location: "Online 25/4-26/4",
+      link: {
+        url: "https://drakenfilm.se/film/jag-blir-mer-med-dig",
+        title: "Draken Film ↗",
+      },
     },
   ];
   const now = new Date();
@@ -71,12 +91,13 @@ export default function ScreeningInfo() {
     },
   );
   return (
-    <Section>
+    <Section id="screenings">
       <div className="bg-honey w-full h-full flex flex-col gap-4 justify-start px-8 py-12 w-full">
         <SectionLabel label={t("label")} />
-        <h2 className="font-semibold font-mono mt-8 mb-4 uppercase">
+        <Heading className="mb-8">{t("title")}</Heading>
+        <Heading Tag="h3" style="h3">
           {t("upcomingTitle")}
-        </h2>
+        </Heading>
         {upcomingScreenings.length === 0 ? (
           <p className="text-foreground/60">{t("noUpcoming")}</p>
         ) : (
@@ -93,14 +114,14 @@ export default function ScreeningInfo() {
                 <span className="uppercase font-mono text-sm">
                   {screening.location}
                 </span>
-                {screening.url && (
+                {screening.link && (
                   <a
-                    href={screening.url}
+                    href={screening.link.url}
                     className="uppercase font-mono text-xs"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    More info
+                    {screening.link.title}
                   </a>
                 )}
               </li>
@@ -108,7 +129,9 @@ export default function ScreeningInfo() {
           </ul>
         )}
 
-        <h2 className="font-mono uppercase mt-8 mb-4">{t("pastTitle")}</h2>
+        <Heading Tag="h3" style="h3">
+          {t("pastTitle")}
+        </Heading>
         <ul className="flex flex-col gap-4 m-0 p-0 border-t-2 border-bark/40 py-4">
           {pastScreenings.map((screening) => (
             <li
@@ -122,14 +145,14 @@ export default function ScreeningInfo() {
               <span className="uppercase font-mono text-sm">
                 {screening.location}
               </span>
-              {screening.url && (
+              {screening.link && (
                 <a
-                  href={screening.url}
+                  href={screening.link.url}
                   className="uppercase font-mono text-xs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t("moreInfoUrl")}
+                  {screening.link.title}
                 </a>
               )}
             </li>

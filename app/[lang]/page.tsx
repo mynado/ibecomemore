@@ -1,8 +1,6 @@
-"use client";
-
 import Hero from "./components/Hero";
 // import StudyMaterial from "./components/StudyMaterial";
-// import Press from "./components/Press";
+import Press from "./components/Press";
 import About from "./components/About";
 import Trailer from "./components/Trailer";
 import Mahoyo from "./components/Mahoyo";
@@ -18,10 +16,10 @@ export default function Home() {
         <About />
         <Trailer />
         <Mahoyo />
+        <ScreeningInfo />
         <GetInTouch />
         {/* <StudyMaterial /> */}
-        {/* <Press /> */}
-        <ScreeningInfo />
+        <Press />
         <ProductionFacts />
       </main>
     </div>

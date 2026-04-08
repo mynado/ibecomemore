@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Section from "./ui/Section";
 import Link from "next/dist/client/link";
+import Heading from "./ui/Heading";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -11,9 +12,9 @@ export default function Hero() {
         <p className="font-mono text-xs tracking-widest uppercase text-bark mb-4">
           {t("preTitle")}
         </p>
-        <h1 className="text-6xl font-extrabold font-serif mb-2 max-w-sm">
+        <Heading Tag="h1" style="h1" className="max-w-sm font-extrabold">
           {t("title")}
-        </h1>
+        </Heading>
         <p className="text-2xl font-semibold italic text-bark font-serif">
           {t("subtitle")}
         </p>

@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
 import ContactForm from "./ui/ContactForm";
+import Heading from "./ui/Heading";
 
 const screeningTypes = [
   "screeningTypeA",
@@ -14,10 +15,10 @@ export default function GetInTouch() {
   const t = useTranslations("GetInTouch");
 
   return (
-    <Section id="screening">
+    <Section id="contact">
       <div className="w-full md:w-1/2 flex flex-col gap-4 justify-start px-8 py-12">
         <SectionLabel label={t("label")} />
-        <h2 className="text-4xl font-extrabold mb-2 max-w-xs">{t("title")}</h2>
+        <Heading className="max-w-sm">{t("title")}</Heading>
         <p className="text-bark">{t("description")}</p>
         <ul className="flex flex-col gap-4 mt-4 font-mono uppercase text-sm m-0 p-0">
           {screeningTypes.map((type) => (

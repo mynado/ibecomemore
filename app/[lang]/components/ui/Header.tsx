@@ -9,9 +9,10 @@ import LocaleToggler from "./LocaleToggler";
 const navigation = [
   { name: "navHome", href: "#home" },
   { name: "navAbout", href: "#about" },
-  { name: "navScreening", href: "#screening" },
+  { name: "navScreenings", href: "#screenings" },
+  { name: "navContact", href: "#contact" },
   // { name: "navStudy", href: "#study" },
-  // { name: "navPress", href: "#press" },
+  { name: "navPress", href: "#press" },
 ];
 
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {

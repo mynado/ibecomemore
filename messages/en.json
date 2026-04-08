@@ -7,9 +7,8 @@
     "title": "I Become More With You",
     "navHome": "Home",
     "navAbout": "About",
-    "navTrailer": "Trailer",
-    "navDirectors": "Mahoyo",
-    "navScreening": "Screen the Film",
+    "navScreenings": "Screenings",
+    "navContact": "Contact",
     "navStudy": "Study Material",
     "navPress": "Press"
   },
@@ -85,11 +84,21 @@
   },
   "Press": {
     "label": "Press & Media",
-    "viewPressKit": "View Press Kit",
-    "downloadPhotos": "Download All Photos"
+    "title": "Material",
+    "description": "Press material for I Become More With You — including high resolution photos, film stills, and press kit — is available below. For interviews and other press inquiries, contact our producer directly.",
+    "contactLabel": "Press Contact",
+    "pressKitLabel": "Press Kit",
+    "openPressKit": "Open Press Kit",
+    "pressPhotoLabel": "Press Photos",
+    "pressPhotoDescription": "High resolution photos from the production, available for press use in print and digital publications.",
+    "pressPhotoLink": "Open Press Photos",
+    "filmStillsLabel": "Film Stills",
+    "filmStillsDescription": "Screenshots from the film, suitable for editorial and programme use.",
+    "filmStillsLink": "Open Film Stills"
   },
   "ScreeningInfo": {
     "label": "Screenings",
+    "title": "Upcoming and Past Screenings",
     "upcomingTitle": "Upcoming",
     "pastTitle": "Past",
     "noUpcoming": "No upcoming screenings at the moment. Check back soon!",

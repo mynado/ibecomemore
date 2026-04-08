@@ -21,9 +21,9 @@ export default function Footer() {
           <li>
             <Link href="#screening">{t("navScreening")}</Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="#press">{t("navPress")}</Link>
-          </li> */}
+          </li>
         </ul>
         <div className="mt-4 text-xs text-petal/60 uppercase">
           <div className="mb-2">{t("followUs")}</div>

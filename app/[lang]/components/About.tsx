@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import SectionLabel from "./ui/SectionLabel";
 import Section from "./ui/Section";
+import Heading from "./ui/Heading";
 
 const filmInfo = [
   { label: "directorLabel", value: "directorValue" },
@@ -32,7 +33,7 @@ export default function About() {
     <Section id="about">
       <div className="px-8 py-12 w-full md:w-2/5 h-full flex flex-col gap-4 justify-start bg-honey border-r-2 border-foreground">
         <SectionLabel label={t("aboutLabel")} />
-        <h2 className="text-5xl font-extrabold mb-2 max-w-sm">{t("title")}</h2>
+        <Heading>{t("title")}</Heading>
         <ul className="mt-4">
           {filmInfo.map((item) => (
             <li
