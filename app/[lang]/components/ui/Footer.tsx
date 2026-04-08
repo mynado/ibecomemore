@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { use } from "react";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const th = useTranslations("Header");
   return (
     <div className="bg-ink w-full mx-auto px-8 py-12 flex flex-col gap-12 md:flex-row md:gap-4 text-petal">
       <div className="md:w-1/3">
@@ -19,7 +21,10 @@ export default function Footer() {
             <Link href="#about">{t("navAbout")}</Link>
           </li>
           <li>
-            <Link href="#screening">{t("navScreening")}</Link>
+            <Link href="#screenings">{th("navScreenings")}</Link>
+          </li>
+          <li>
+            <Link href="#contact">{th("navContact")}</Link>
           </li>
           <li>
             <Link href="#press">{t("navPress")}</Link>

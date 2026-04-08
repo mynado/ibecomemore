@@ -63,7 +63,7 @@ export default function ScreeningInfo() {
       },
     },
     {
-      title: "IFEMA+",
+      title: "IFEMA+ (Draken Film)",
       date: "2026-04-26T17:59:00Z",
       formattedDate: formatScreeningDate("2026-04-26T17:59:00Z"),
       location: "Online 25/4-26/4",
