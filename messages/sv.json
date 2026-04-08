@@ -22,7 +22,7 @@
     "posterAlt": "Jag blir mer med dig - Poster"
   },
   "About": {
-    "aboutLabel": "Om filmen",
+    "aboutLabel": "Filmen",
     "synopsisLabel": "Synopsis",
     "title": "Om filmen",
     "synopsis": "Barndomsvännerna MyNa och Farah utgör den konstnärliga duon Mahoyo. Genom sin konst utforskar de frågor om identitet och tillhörighet i det starkt segregerade svenska samhället. När vi följer deras resa kommer vi närmare både framväxten av högerextrema rörelser i Sverige och mobiliseringen av en generation unga svenskar som skapar politisk förändring.",
@@ -47,7 +47,7 @@
     "screeningTypeB": "Studiecirklar & workshops",
     "screeningTypeC": "Community & kulturevents",
     "screeningTypeD": "Filmfestivaler & institutioner",
-    "contactLabel": "Kontakt oss",
+    "contactLabel": "Kontakta oss",
     "contactTitle": "Kontakta oss för en visning"
   },
   "ContactForm": {
