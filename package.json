@@ -1,0 +1,12 @@
+{
+  "name": "ibecomemore",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter frontend dev\" \"pnpm --filter studio dev\"",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:studio": "pnpm --filter studio dev"
+  }
+}
