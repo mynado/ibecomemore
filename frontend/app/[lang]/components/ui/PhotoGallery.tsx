@@ -9,6 +9,7 @@ export default function PhotoGallery({ photos = [] }: { photos?: string[] }) {
             src={src}
             alt={`Photo ${index + 1}`}
             fill
+            sizes="(max-width: 768px) 50vw, 33vw"
             className="object-cover"
           />
         </div>
