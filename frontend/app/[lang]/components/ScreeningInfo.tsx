@@ -1,84 +1,29 @@
-import { useTranslations } from "next-intl";
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
 import Heading from "./ui/Heading";
+import { Screening } from "@/app/lib/sanity/types";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getScreenings } from "@/app/lib/sanity/queries";
 
-type Screening = {
-  title: string;
-  date: string;
-  formattedDate: string;
-  location: string;
-  link?: {
-    url: string;
-    title: string;
-  };
-};
-
-export default function ScreeningInfo() {
-  const t = useTranslations("ScreeningInfo");
+export default async function ScreeningInfo() {
+  const t = await getTranslations("ScreeningInfo");
+  console.log("t: ", t);
+  const locale = await getLocale();
+  const screenings = await getScreenings(locale);
+  console.log("Screenings:", screenings);
 
   const formatScreeningDate = (isoDate: string) =>
-    new Date(isoDate).toLocaleDateString("en-SE", {
+    new Date(isoDate).toLocaleDateString(locale, {
       year: "numeric",
       month: "numeric",
       day: "numeric",
     });
-  const screenings: Screening[] = [
-    {
-      title: "Migration Matters Film Festival",
-      date: "2026-02-20T00:00:00Z",
-      formattedDate: formatScreeningDate("2026-02-20T00:00:00Z"),
-      location: "Filmcentrum Riks, Stockholm",
-      link: {
-        url: "https://mmff.se/film/i-become-more-with-you/",
-        title: "Festival page ↗",
-      },
-    },
-    {
-      title: "Vi blir mer tillsammans – FN-dagen mot islamofobi",
-      date: "2026-03-15T00:00:00Z",
-      formattedDate: formatScreeningDate("2026-03-15T00:00:00Z"),
-      location: "Arena 305, Malmö",
-    },
-    {
-      title: "Skolbio",
-      date: "2026-04-17T00:00:00Z",
-      formattedDate: formatScreeningDate("2026-04-17T00:00:00Z"),
-      location: "Lund",
-    },
-    {
-      title: "Skolbio, Antirasitiska Filmdagar",
-      date: "2026-04-21T00:00:00Z",
-      formattedDate: formatScreeningDate("2026-04-21T00:00:00Z"),
-      location: "Malmö",
-    },
-    {
-      title: "IFEMA+",
-      date: "2026-04-25T00:00:00Z",
-      formattedDate: formatScreeningDate("2026-04-25T00:00:00Z"),
-      location: "Panora, Malmö",
-      link: {
-        url: "https://www.femalefilmfestival.se/i-become-more-with-you/",
-        title: "Festival page ↗",
-      },
-    },
-    {
-      title: "IFEMA+ (Draken Film)",
-      date: "2026-04-26T17:59:00Z",
-      formattedDate: formatScreeningDate("2026-04-26T17:59:00Z"),
-      location: "Online 25/4-26/4",
-      link: {
-        url: "https://drakenfilm.se/film/jag-blir-mer-med-dig",
-        title: "Draken Film ↗",
-      },
-    },
-  ];
   const now = new Date();
   const getScreeningTime = (date: string) => new Date(date).getTime();
   const nowTime = now.getTime();
   const { upcomingScreenings, pastScreenings } = screenings.reduce(
     (acc, screening) => {
-      if (getScreeningTime(screening.date) >= nowTime) {
+      if (getScreeningTime(screening.end) >= nowTime) {
         acc.upcomingScreenings.push(screening);
       } else {
         acc.pastScreenings.push(screening);
@@ -104,24 +49,26 @@ export default function ScreeningInfo() {
           <ul className="flex flex-col gap-4 m-0 p-0 mb-8 w-full border-t-2 border-bark py-4">
             {upcomingScreenings.map((screening) => (
               <li
-                key={screening.title}
+                key={screening._id}
                 className="w-fit py-2 grid md:grid-cols-4 gap-4 items-center w-full border-b-1 border-bark/40"
               >
                 <span className="font-mono text-sm w-fit">
-                  {screening.formattedDate}
+                  {formatScreeningDate(screening.start)}
                 </span>
                 <span className="text-md">{screening.title}</span>
-                <span className="uppercase font-mono text-sm">
-                  {screening.location}
-                </span>
-                {screening.link && (
+                {screening.venueName && screening.city && (
+                  <span className="uppercase font-mono text-sm">
+                    {screening.venueName}, {screening.city}
+                  </span>
+                )}
+                {screening.url && (
                   <a
-                    href={screening.link.url}
+                    href={screening.url}
                     className="uppercase font-mono text-xs"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {screening.link.title}
+                    {screening.urlLabel && screening.urlLabel}
                   </a>
                 )}
               </li>
@@ -135,24 +82,27 @@ export default function ScreeningInfo() {
         <ul className="flex flex-col gap-4 m-0 p-0 border-t-2 border-bark/40 py-4">
           {pastScreenings.map((screening) => (
             <li
-              key={screening.title}
+              key={screening._id}
               className="w-fit py-2 grid md:grid-cols-4 gap-4 items-center w-full text-foreground/60 border-b-1 border-bark/40"
             >
               <span className="font-mono text-sm w-fit">
-                {screening.formattedDate}
+                {formatScreeningDate(screening.start)}
               </span>
               <span className="text-md">{screening.title}</span>
-              <span className="uppercase font-mono text-sm">
-                {screening.location}
-              </span>
-              {screening.link && (
+              {screening.venueName && screening.city && (
+                <span className="uppercase font-mono text-sm">
+                  {screening.venueName}, {screening.city}
+                </span>
+              )}
+
+              {screening.url && (
                 <a
-                  href={screening.link.url}
+                  href={screening.url}
                   className="uppercase font-mono text-xs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {screening.link.title}
+                  {screening.urlLabel && screening.urlLabel}
                 </a>
               )}
             </li>
