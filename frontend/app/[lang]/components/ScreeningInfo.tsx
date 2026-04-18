@@ -7,10 +7,8 @@ import { getScreenings } from "@/app/lib/sanity/queries";
 
 export default async function ScreeningInfo() {
   const t = await getTranslations("ScreeningInfo");
-  console.log("t: ", t);
   const locale = await getLocale();
   const screenings = await getScreenings(locale);
-  console.log("Screenings:", screenings);
 
   const formatScreeningDate = (isoDate: string) =>
     new Date(isoDate).toLocaleDateString(locale, {
@@ -56,11 +54,12 @@ export default async function ScreeningInfo() {
                   {formatScreeningDate(screening.start)}
                 </span>
                 <span className="text-md">{screening.title}</span>
-                {screening.venueName && screening.city && (
-                  <span className="uppercase font-mono text-sm">
-                    {screening.venueName}, {screening.city}
-                  </span>
-                )}
+                <span className="uppercase font-mono text-sm">
+                  {screening.venueName &&
+                    screening.city &&
+                    `${screening.venueName}, ${screening.city}`}
+                </span>
+
                 {screening.url && (
                   <a
                     href={screening.url}
@@ -68,7 +67,7 @@ export default async function ScreeningInfo() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {screening.urlLabel && screening.urlLabel}
+                    {screening.urlLabel && `${screening.urlLabel} ↗`}
                   </a>
                 )}
               </li>
@@ -89,11 +88,11 @@ export default async function ScreeningInfo() {
                 {formatScreeningDate(screening.start)}
               </span>
               <span className="text-md">{screening.title}</span>
-              {screening.venueName && screening.city && (
-                <span className="uppercase font-mono text-sm">
-                  {screening.venueName}, {screening.city}
-                </span>
-              )}
+              <span className="uppercase font-mono text-sm">
+                {screening.venueName &&
+                  screening.city &&
+                  `${screening.venueName}, ${screening.city}`}
+              </span>
 
               {screening.url && (
                 <a
@@ -102,7 +101,7 @@ export default async function ScreeningInfo() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {screening.urlLabel && screening.urlLabel}
+                  {screening.urlLabel && `${screening.urlLabel} ↗`}
                 </a>
               )}
             </li>
