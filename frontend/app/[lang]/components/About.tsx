@@ -8,6 +8,7 @@ import Heading from "./ui/Heading";
 
 const filmInfo = [
   { label: "directorLabel", value: "directorValue" },
+  { label: "producerLabel", value: "producerValue" },
   { label: "yearLabel", value: "yearValue" },
   { label: "durationLabel", value: "durationValue" },
   { label: "languageLabel", value: "languageValue" },

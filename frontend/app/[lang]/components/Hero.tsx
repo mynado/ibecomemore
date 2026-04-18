@@ -31,7 +31,7 @@ export default function Hero() {
             {t("description")}
           </p>
           <Link
-            href="#screening"
+            href="#contact"
             className="bg-ember text-white font-mono text-xs tracking-widest uppercase px-8 py-4 border-2 border-ember hover:bg-transparent hover:text-ember transition-colors self-start"
           >
             {t("requestScreening")}
