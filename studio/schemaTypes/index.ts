@@ -1,2 +1,3 @@
 import screening from './screening'
-export const schemaTypes = [screening]
+import homePage from './homePage'
+export const schemaTypes = [screening, homePage]
