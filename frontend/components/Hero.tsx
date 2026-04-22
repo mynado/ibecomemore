@@ -9,7 +9,7 @@ const posters: Record<string, string> = {
   sv: "/poster_swedish.jpg",
 };
 
-export default function Hero() {
+export default function Hero({ description = "" }: { description?: string }) {
   const t = useTranslations("Hero");
   const locale = useLocale();
   const posterSrc = posters[locale] || posters.en;
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="h-1 w-20 bg-ember my-8"></div>
         <div className="flex flex-col gap-8">
           <p className="text-xl font-light leading-relaxed max-w-[38ch] mb-4">
-            {t("description")}
+            {description}
           </p>
           <Link
             href="#contact"

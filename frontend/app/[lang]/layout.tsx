@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
 import "./globals.css";
-import Header from "./components/ui/Header";
-import Footer from "./components/ui/Footer";
 import { getTranslations } from "next-intl/server";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 
 const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",

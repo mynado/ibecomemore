@@ -4,7 +4,7 @@ import SectionLabel from "./ui/SectionLabel";
 import Image from "next/image";
 import Heading from "./ui/Heading";
 
-export default function Mahoyo() {
+export default function Mahoyo({ description }: { description?: string }) {
   const t = useTranslations("Mahoyo");
   return (
     <Section>
@@ -13,7 +13,7 @@ export default function Mahoyo() {
         <Heading>
           {t("title")} <span className="text-ember italic">Mahoyo</span>
         </Heading>
-        <div className="space-y-4 whitespace-pre-wrap">{t("description")}</div>
+        <div className="space-y-4 whitespace-pre-wrap">{description}</div>
       </div>
       <div className="w-full md:w-2/5 h-full flex flex-col justify-start">
         <div className="relative border-b-2 border-foreground">

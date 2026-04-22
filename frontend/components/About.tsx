@@ -16,7 +16,13 @@ const filmInfo = [
   { label: "coProductionLabel", value: "coProductionValue" },
 ];
 
-export default function About() {
+export default function About({
+  synopsis,
+  fullSynopsis,
+}: {
+  synopsis?: string;
+  fullSynopsis?: string;
+}) {
   const t = useTranslations("About");
   const tFacts = useTranslations("ProductionFacts");
   const [showFullSynopsis, setShowFullSynopsis] = useState(false);
@@ -54,13 +60,13 @@ export default function About() {
         className="px-8 py-12 w-full md:w-3/5 h-full flex flex-col gap-4 justify-start"
       >
         <SectionLabel label={t("synopsisLabel")} />
-        <p className="text-lg">{t("synopsis")}</p>
+        <p className="text-lg">{synopsis}</p>
         <div
           className={`overflow-hidden transition-all duration-500 ease-in-out ${
             showFullSynopsis ? "max-h-1000 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <p className="text-md mt-4 mb-8">{t("fullSynopsis")}</p>
+          <p className="text-md mt-4 mb-8">{fullSynopsis}</p>
         </div>
         <button
           className="border-b-1 border-ember text-ember w-fit mt-4 uppercase text-xs font-mono hover:text-red-900 transition-colors duration-200"

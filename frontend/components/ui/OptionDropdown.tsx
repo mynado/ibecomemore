@@ -1,6 +1,6 @@
 "use client";
 
-import DownArrow from "@/app/icons/DownArrow";
+import DownArrow from "@/icons/DownArrow";
 import clsx from "clsx";
 import { useState } from "react";
 

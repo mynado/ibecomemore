@@ -1,3 +1,4 @@
 import screening from './screening'
 import homePage from './homePage'
-export const schemaTypes = [screening, homePage]
+import studyMaterial from './studyMaterial'
+export const schemaTypes = [homePage, screening, studyMaterial]

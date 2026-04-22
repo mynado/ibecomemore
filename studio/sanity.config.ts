@@ -34,11 +34,12 @@ export default defineConfig({
             S.divider(),
 
             S.documentTypeListItem('screening').title('Screening'),
+            S.documentTypeListItem('studyMaterial').title('Study Material'),
           ]),
     }),
     documentInternationalization({
       supportedLanguages: supportedLanguages,
-      schemaTypes: ['screening', 'homePage'],
+      schemaTypes: ['homePage', 'screening', 'studyMaterial'],
     }),
     visionTool(),
   ],

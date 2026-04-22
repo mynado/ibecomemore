@@ -5,6 +5,21 @@ export type BaseData = {
   _updatedAt: string;
 };
 
+export interface HomePageData extends BaseData {
+  about: {
+    fullSynopsis: string;
+    synopsis: string;
+  };
+  hero: {
+    description: string;
+  };
+  mahoyo: {
+    description: string;
+  };
+  language: "sv" | "en";
+  title: string;
+}
+
 export interface Screening extends BaseData {
   start: string;
   title: string;

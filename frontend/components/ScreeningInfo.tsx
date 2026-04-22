@@ -1,9 +1,9 @@
 import Section from "./ui/Section";
 import SectionLabel from "./ui/SectionLabel";
 import Heading from "./ui/Heading";
-import { Screening } from "@/app/lib/sanity/types";
+import { Screening } from "@/lib/sanity/types";
 import { getLocale, getTranslations } from "next-intl/server";
-import { getScreenings } from "@/app/lib/sanity/queries";
+import { getScreenings } from "@/lib/sanity/queries";
 
 export default async function ScreeningInfo() {
   const t = await getTranslations("ScreeningInfo");
